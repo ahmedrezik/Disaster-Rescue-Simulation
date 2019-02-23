@@ -1,3 +1,10 @@
 /UnitState.class
 /MedicalUnit.class
 /Evacuator.class
+/Ambulance.class
+/DiseaseControlUnit.class
+/FireTruck.class
+/FireUnit.class
+/GasControlUnit.class
+/PoliceUnit.class
+/Unit.class

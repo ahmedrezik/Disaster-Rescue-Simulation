@@ -1,7 +1,10 @@
 package model.units;
 import simulation.Simulatable;
 import simulation.Address;
-abstract public class Unit implements Simulatable,Rescuable {
+import simulation.Rescuable;
+
+
+public abstract class Unit implements Simulatable,Rescuable {
 private String UnitID;
 private UnitState state;
 private  Address location;
@@ -12,7 +15,7 @@ private int stepsPerCycle;
 public Unit(String id,Address location,int stepsPerCycle) {
 	UnitID=id;
 	this.location=location;
-	this.stepsPerCycle=stepsPercycle;
+	this.stepsPerCycle= stepsPerCycle;
 	this.state=UnitState.IDLE;
 }
 
