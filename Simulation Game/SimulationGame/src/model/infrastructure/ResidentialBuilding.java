@@ -1,10 +1,13 @@
 
 package model.infrastructure;
 import simulation.Rescuable;
-import model.people.Citizen
+import model.people.Citizen;
 import simulation.Simulatable;
+import java.util.*;
+import model.disasters.Disaster;
+import simulation.Address;
 public class ResidentialBuilding implements Simulatable , Rescuable {
- private String location;
+ private Address location;
  private int structuralIntegrity  ;
  private int fireDamage ; 
  private int gasLevel;
@@ -18,10 +21,10 @@ public ResidentialBuilding(Address location){
 	foundationDamage = 0 ;
 	structuralIntegrity = 100;
 }
- String getLocation() {
+ Address getLocation() {
 	return location;
 }
-public void setLocation(String location) {
+public void setLocation(Address location) {
 	this.location = location;
 }
 public void setStructuralIntegrity(int structuralIntegrity) {

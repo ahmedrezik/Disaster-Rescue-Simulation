@@ -1,5 +1,8 @@
 package model.units;
+import java.util.*;
 
+import model.people.Citizen;
+import simulation.Address;
 abstract class PoliceUnit extends Unit {
 private ArrayList<Citizen> passengers;
 private int maxCapacity;
@@ -13,8 +16,8 @@ public int getDistanceToBase() {
 public void setDistanceToBase(int distanceToBase) {
 	this.distanceToBase = distanceToBase;
 }
-public PoliceUnit(String id , Adress location , int stepsPerCycle , int maxCapacity){
-	super();
+public PoliceUnit(String id , Address location , int stepsPerCycle , int maxCapacity){
+	super(id,location,stepsPerCycle);
 	this.maxCapacity = maxCapacity;
 }
 }
