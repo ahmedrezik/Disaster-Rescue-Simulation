@@ -11,7 +11,16 @@ import model.disasters.Fire;
 import model.disasters.GasLeak;
 import model.disasters.Infection;
 import model.disasters.Injury;
+
+
+
+
+
+
 public class Simulator {
+	
+	
+	
 private int currentCycle;
 private static ArrayList<ResidentialBuilding> buildings;
 private static ArrayList<Citizen> citizens;

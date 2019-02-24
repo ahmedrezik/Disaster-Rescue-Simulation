@@ -18,4 +18,6 @@ visibleBuildings =new ArrayList<ResidentialBuilding>();
 visibleCitizens=new ArrayList<Citizen>();
 emergencyUnits=new ArrayList<Unit>();
 }
+
+
 }
