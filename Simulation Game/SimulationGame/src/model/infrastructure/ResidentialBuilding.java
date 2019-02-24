@@ -21,7 +21,7 @@ public ResidentialBuilding(Address location){
 	foundationDamage = 0 ;
 	structuralIntegrity = 100;
 }
- Address getLocation() {
+public  Address getLocation() {
 	return location;
 }
 public void setLocation(Address location) {
