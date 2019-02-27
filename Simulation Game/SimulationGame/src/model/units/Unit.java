@@ -5,7 +5,7 @@ import simulation.Rescuable;
 
 
 public abstract class Unit implements Simulatable,Rescuable {
-private String UnitID;
+private String unitID;
 private UnitState state;
 private  Address location;
 private Rescuable target;
@@ -13,7 +13,7 @@ private int distanceToTarget;
 private int stepsPerCycle;
 
 public Unit(String id,Address location,int stepsPerCycle) {
-	UnitID=id;
+	unitID=id;
 	this.location=location;
 	this.stepsPerCycle= stepsPerCycle;
 	this.state=UnitState.IDLE;
@@ -32,7 +32,7 @@ public void setLocation(Address location) {
 	this.location = location;
 }
 public String getUnitID() {
-	return UnitID;
+	return unitID;
 }
 public Rescuable getTarget() {
 	return target;

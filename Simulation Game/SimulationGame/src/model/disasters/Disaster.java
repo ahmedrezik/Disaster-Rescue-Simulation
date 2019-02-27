@@ -1,6 +1,7 @@
 package model.disasters;
 import simulation.Rescuable;
-public abstract class Disaster implements Rescuable{
+import simulation.Simulatable;
+public abstract class Disaster implements Rescuable, Simulatable{
 //The class represents a disaster that could happen to a "Citizen" or to "Resedential Buidling"
 	
 	

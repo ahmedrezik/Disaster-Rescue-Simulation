@@ -12,6 +12,23 @@ public class Citizen implements Simulatable, Rescuable {
 	private String name;
 	private int age;
 	private int hp;
+	private int bloodLoss;
+	private int toxicity;
+	
+	
+	public Citizen(Address location, String nationalID, String name, int age) {
+		this.location = location;
+		this.nationalID = nationalID;
+		this.name = name;
+		this.age = age;
+		this.toxicity = 0;
+		this.bloodLoss = 0;
+		this.hp = 100;
+		this.state = CitizenState.SAFE;
+		
+	}
+	
+	
 	public CitizenState getState() {
 		return state;
 	}
@@ -68,27 +85,14 @@ public class Citizen implements Simulatable, Rescuable {
 		this.bloodLoss = bloodLoss;
 	}
 
-	public int getToxcicity() {
-		return toxcicity;
-	}
-
-	public void setToxcicity(int toxcicity) {
-		this.toxcicity = toxcicity;
-	}
-
-	private int bloodLoss ;
-	private int toxcicity;
 	
-	public Citizen(Address location, String nationalID, String name, int age) {
-		this.location = location;
-		this.nationalID = nationalID;
-		this.name = name;
-		this.age = age;
-		this.toxcicity = 0;
-		this.bloodLoss = 0;
-		this.hp = 100;
-		this.state = CitizenState.SAFE;
-		
+
+	public int getToxicity() {
+		return toxicity;
+	}
+
+	public void setToxicity(int toxicity) {
+		this.toxicity = toxicity;
 	}
 	
 
