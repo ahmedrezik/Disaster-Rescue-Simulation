@@ -108,16 +108,16 @@ private void loadCitizens(String filePath)throws IOException{
 	BufferedReader br=new BufferedReader(fileReader);
 	while((currentLine=br.readLine())!=null){
 		String[] s=currentLine.split(",");
-		citizens.add(new Citizen(world[Integer.parseInt(s[0])][Integer.parseInt(s[1])],s[2],s[3],Integer.parseInt(s[4])));
+		Citizen c=new  Citizen(world[Integer.parseInt(s[0])][Integer.parseInt(s[1])],s[2],s[3],Integer.parseInt(s[4]));
+		citizens.add(c);
+		if(retrieveBuilding(c.getLocation())!=null) retrieveBuilding(c.getLocation()).getOccupants().add(c);
+		
 		
 		
 	}
 	br.close();
 	
-	for(int i =0 ; i < citizens.size();i++) {
-		this.retrieveBuilding (citizens.get(i).getLocation()).getOccupants().add(citizens.get(i));
 	}
-}
 private void loadDisasters(String filePath) throws IOException{
 	String currentLine="";
 	FileReader fileReader=new FileReader(filePath);
@@ -127,14 +127,13 @@ private void loadDisasters(String filePath) throws IOException{
 		
 		if(s.length == 4) {
 		switch(s[1]){
-		
 		case"FIR": plannedDisasters.add( new Fire(Integer.parseInt(s[0]),retrieveBuilding (world[Integer.parseInt(s[2])][Integer.parseInt(s[3])])));break;
-		case"GLK": plannedDisasters.add( new GasLeak(Integer.parseInt(s[0]),retrieveBuilding (world[Integer.parseInt(s[2])][Integer.parseInt(s[3])])));break;
+		case"GLK": plannedDisasters.add( new GasLeak(Integer.parseInt(s[0]),retrieveBuilding (world[Integer.parseInt(s[2])][Integer.parseInt(s[3])])));
 		}}
 		else {
 			switch(s[1]){
 			case"INJ": plannedDisasters.add( new Injury(Integer.parseInt(s[0]),retrieveCitizen(s[2])));break;
-			case"INF": plannedDisasters.add( new Infection(Integer.parseInt(s[0]),retrieveCitizen(s[2]))); break;
+			case"INF": plannedDisasters.add( new Infection(Integer.parseInt(s[0]),retrieveCitizen(s[2]))); 
 			
 			}
 			
