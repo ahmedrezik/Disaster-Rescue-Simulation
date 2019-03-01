@@ -81,7 +81,7 @@ private void loadUnits(String filePath)throws IOException {
 		case"DCU":emergencyUnits.add(new DiseaseControlUnit(s[1],world[0][0],Integer.parseInt(s[2])));break;
 		case"EVC":emergencyUnits.add(new Evacuator(s[1],world[0][0],Integer.parseInt(s[2]),Integer.parseInt(s[3])));break;
 		case"GCU":emergencyUnits.add(new GasControlUnit(s[1],world[0][0],Integer.parseInt(s[2])));break;
-		case"FTK": emergencyUnits.add(new FireTruck(s[1],world[0][0],Integer.parseInt(s[2])));
+		case"FTK": emergencyUnits.add(new FireTruck(s[1],world[0][0],Integer.parseInt(s[2])));break;
 		}
 		
 	}
