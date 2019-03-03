@@ -109,6 +109,7 @@ private void loadCitizens(String filePath)throws IOException{
 	while((currentLine=br.readLine())!=null){
 		String[] s=currentLine.split(",");
 		Citizen c=new  Citizen(world[Integer.parseInt(s[0])][Integer.parseInt(s[1])],s[2],s[3],Integer.parseInt(s[4]));
+		
 		citizens.add(c);
 		if(retrieveBuilding(c.getLocation())!=null) retrieveBuilding(c.getLocation()).getOccupants().add(c);
 		

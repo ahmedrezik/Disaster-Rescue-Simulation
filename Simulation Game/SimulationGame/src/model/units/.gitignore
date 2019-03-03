@@ -8,3 +8,8 @@
 /GasControlUnit.class
 /PoliceUnit.class
 /Unit.class
+/Truck.class
+/Car.class
+/ReconstructionSpeed.class
+/PoliceTruck.class
+/PoliceCar.class
