@@ -3,7 +3,7 @@ package model.units;
 import simulation.Address;
 
 public class PoliceTruck extends PoliceUnit implements Truck{
-	
+	// MileStone 1 Quiz class
 	
 	private ReconstructionSpeed rspeed;
 	
