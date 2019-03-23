@@ -6,4 +6,25 @@ public class Infection extends Disaster{
 	
 	public Infection(int cycle, Citizen target) {
 		super(cycle,target);
-	}}
+	}
+	public void strike(){ 
+		this.setActive(true);
+		int x = ((Citizen)getTarget()).getToxicity();
+		((Citizen)getTarget()).setToxicity(x+25);
+		
+		
+		
+		}
+public void cycleStep(){
+		
+		
+		int z = ((Citizen)getTarget()).getToxicity();
+		
+		((Citizen)getTarget()).setToxicity(z+15);
+	
+	
+
+	
+		
+}
+	}

@@ -14,7 +14,6 @@ public abstract class Disaster implements Rescuable, Simulatable{
 		this.active = false;
 		
 	}
-	public void strike(){}
 
 	public void setActive(boolean active) {
 		this.active = active;
