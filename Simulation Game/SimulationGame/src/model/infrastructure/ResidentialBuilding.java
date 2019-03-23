@@ -5,6 +5,7 @@ import model.people.Citizen;
 import simulation.Simulatable;
 import java.util.*;
 import model.disasters.Disaster;
+import model.events.SOSListener;
 import simulation.Address;
 public class ResidentialBuilding implements Simulatable , Rescuable {
  private Address location;
@@ -107,6 +108,11 @@ public void cycleStep(){
 	this.setStructuralIntegrity(n);
 	}
 	//fadel gaslevel msh by-affect directly
+}
+@Override
+public void struckBy(Disaster d) {
+	// TODO Auto-generated method stub
+	
 }
  
 }
