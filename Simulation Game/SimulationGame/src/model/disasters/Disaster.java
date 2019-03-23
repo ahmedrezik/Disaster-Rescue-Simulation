@@ -4,7 +4,6 @@ import simulation.Simulatable;
 public abstract class Disaster implements Rescuable, Simulatable{
 //The class represents a disaster that could happen to a "Citizen" or to "Resedential Buidling"
 	
-	
 	private int startCycle;
 	private Rescuable target;
 	private boolean active;
