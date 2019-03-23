@@ -1,5 +1,6 @@
 package model.units;
 import simulation.Simulatable;
+import model.events.WorldListener;
 import simulation.Address;
 import simulation.Rescuable;
 
@@ -11,6 +12,7 @@ private  Address location;
 private Rescuable target;
 private int distanceToTarget;
 private int stepsPerCycle;
+private WorldListener worldListener;
 
 public Unit(String id,Address location,int stepsPerCycle) {
 	unitID=id;

@@ -25,4 +25,7 @@ public int getDistanceToBase() {
 public void setDistanceToBase(int distanceToBase) {
 	this.distanceToBase = distanceToBase;
 }
+public ArrayList getPassengers() {
+	return this.passengers;
+}
 }

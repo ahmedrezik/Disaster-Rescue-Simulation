@@ -13,4 +13,10 @@ public  abstract class MedicalUnit extends Unit {
 		
 		
 	}
+
+
+	public int getTreatmentAmount() {
+		return treatmentAmount;
+	}
+	
 }
