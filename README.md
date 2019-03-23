@@ -1,4 +1,2 @@
 # CS4Game
-Our Kick-ass Game here it is
-This is our private Git-Hub repo : i.e : No one could view the code except for us !
-We shall commit our codes and finish our project right here. I wish us massive success
+A Java based simulation-project. This project based on Robo-Cup Rescue Disaster Simulation. The project was developed privately as part of a university course. German University in Cairo CSEN 401: Computer Programming Lab. 
