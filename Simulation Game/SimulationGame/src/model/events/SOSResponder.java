@@ -1,5 +1,7 @@
 package model.events;
 
+import simulation.Rescuable;
+
 public interface SOSResponder {
 	
 	//Used by Player during Gameplay to decide unit dispatching to target "r" and update the unit's state

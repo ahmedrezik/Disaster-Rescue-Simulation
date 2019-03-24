@@ -1,7 +1,7 @@
 package model.disasters;
 import simulation.Rescuable;
 import simulation.Simulatable;
-public abstract class Disaster implements Rescuable, Simulatable{
+public abstract class Disaster implements Simulatable{
 //The class represents a disaster that could happen to a "Citizen" or to "Resedential Buidling"
 	
 	private int startCycle;
@@ -14,7 +14,7 @@ public abstract class Disaster implements Rescuable, Simulatable{
 		this.active = false;
 		
 	}
-	public void strike(){}
+	public abstract void strike();
 
 	public void setActive(boolean active) {
 		this.active = active;

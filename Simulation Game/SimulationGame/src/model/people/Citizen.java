@@ -3,6 +3,8 @@ import simulation.Rescuable;
 import simulation.Simulatable;
 import simulation.Address;
 import model.disasters.Disaster;
+import model.events.SOSListener;
+import model.events.WorldListener;
 public class Citizen implements Simulatable, Rescuable {
 	//The class rep. one citizen int the WORLD . They are Simulatable and Rescuable
 	private CitizenState state;
@@ -129,7 +131,8 @@ public class Citizen implements Simulatable, Rescuable {
 		this.worldListener = worldListener;
 	}
 	public void cycleStep(){
-		 if((toxicity>0 && toxicity<30)||(bloodLoss>0 && bloodLoss<30)) {
+		
+		if((toxicity>0 && toxicity<30)||(bloodLoss>0 && bloodLoss<30)) {
 	        int n=hp-5;
 			this.setHp(n);}
 		if((toxicity>=30 && toxicity<70)||(bloodLoss>=30 && bloodLoss<70)) {
@@ -138,6 +141,13 @@ public class Citizen implements Simulatable, Rescuable {
 		if(toxicity>=70||bloodLoss>=70) {
 			int n=hp-15; 
 			this.setHp(n);}
+	}
+	
+
+	@Override
+	public void struckBy(Disaster d) {
+		// TODO Auto-generated method stub
+		
 	}
 	
 

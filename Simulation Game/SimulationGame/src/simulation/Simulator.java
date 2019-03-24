@@ -3,7 +3,10 @@ import java.io.FileReader;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.*;
+
+import model.events.*;
 import model.people.Citizen;
+import model.people.CitizenState;
 import model.infrastructure.ResidentialBuilding;
 import model.units.*;
 import model.disasters.Disaster;
@@ -11,7 +14,7 @@ import model.disasters.Fire;
 import model.disasters.GasLeak;
 import model.disasters.Infection;
 import model.disasters.Injury;
-import model.events.WorldListener;
+
 
 
 
@@ -25,10 +28,11 @@ public class Simulator implements WorldListener {
 private int currentCycle;
 private  ArrayList<ResidentialBuilding> buildings;
 private  ArrayList<Citizen> citizens;
-private   ArrayList<Unit> emergencyUnits;
-private ArrayList<Disaster> plannedDisasters;
-private ArrayList<Disaster> executedDisasters;
-private Address[][] world;
+private  ArrayList<Unit> emergencyUnits;
+private  ArrayList<Disaster> plannedDisasters;
+private  ArrayList<Disaster> executedDisasters; //TODO
+private  Address[][] world;
+private  SOSListener emergencyService;
 
 public Simulator() throws IOException{
 	world= new Address[10][10];
@@ -46,6 +50,14 @@ public Simulator() throws IOException{
     this.loadBuildings("buildings.csv");
     this.loadCitizens("citizens.csv");
     this.loadDisasters("disasters.csv");
+}
+public void setListeners(){
+	for(int i = 0 ; i < citizens.size() ; i++){
+		citizens.get(i).setWorldListener(this);
+	}
+	for(int i=0;i<emergencyUnits.size();i++){
+		emergencyUnits.get(i).setWorldListener(this);
+	}
 }
 
 //This method is used to retreive a Building using it's Location
@@ -143,5 +155,47 @@ private void loadDisasters(String filePath) throws IOException{
 }
 	br.close();
 }
+public void assignAddress(Simulatable sim, int x, int y){
+   if (sim instanceof Citizen){
+	((Citizen)sim).setLocation(world[x][y]);
+}
+   if (sim instanceof Citizen){
+		((Unit)sim).setLocation(world[x][y]);
+	}
+
+}
+public ArrayList<Unit> getEmergencyUnits() {
+	return emergencyUnits;
+}
+public void setEmergencyService(SOSListener emergencyService) {
+	this.emergencyService = emergencyService;
+}
+public int calculateCasualities(){
+	int x=0;
+	for(int i=0;i<this.citizens.size();i++){
+		if(this.citizens.get(i).getState()==CitizenState.DECEASED)
+			x++;
+	}
+	return x;
+}
+public boolean checkGameOver(){
+	if(this.plannedDisasters.size()!=0)
+		return false;
+	for(int i=0;i<this.executedDisasters.size();i++){
+		if(this.executedDisasters.get(i).isActive()){
+			if(this.executedDisasters.get(i).getTarget() instanceof Citizen){
+				if(((Citizen)this.executedDisasters.get(i).getTarget()).getState()!=CitizenState.DECEASED){
+					return false;
+				}}
+			else if(((ResidentialBuilding)this.executedDisasters.get(i).getTarget()).getStructuralIntegrity()!=0)
+				return false;
+				}
+			}
+	for(int i=0;i<this.emergencyUnits.size();i++){
+		if(this.emergencyUnits.get(i).getState()!=UnitState.IDLE)
+			return false;
+		}
+	return true;
+	}
 
 }

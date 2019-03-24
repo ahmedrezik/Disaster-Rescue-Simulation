@@ -1,4 +1,5 @@
 package model.units;
+import model.people.*;
 import simulation.Address;
 public  abstract class MedicalUnit extends Unit {
 	private int healingAmount;//This corresponds to increasing the HP;
@@ -18,5 +19,12 @@ public  abstract class MedicalUnit extends Unit {
 	public int getTreatmentAmount() {
 		return treatmentAmount;
 	}
+   public void heal(){
+	   if(((Citizen)this.getTarget()).getHp()==100)
+		   this.jobsDone();
+	   else
+	       ((Citizen)this.getTarget()).setHp(((Citizen)this.getTarget()).getHp()+this.healingAmount);
+}
+
 	
 }

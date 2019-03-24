@@ -19,6 +19,6 @@ public void cycleStep(){
 		
 		int z = ((Citizen)getTarget()).getBloodLoss();
 		
-		((Citizen)getTarget()).
+		((Citizen)getTarget()).setBloodLoss(z+10);
 
-}
+}}

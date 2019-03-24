@@ -4,7 +4,7 @@ import simulation.Rescuable;
 import model.people.Citizen;
 import simulation.Simulatable;
 import java.util.*;
-import model.disasters.Disaster;
+import model.disasters.*;
 import model.events.SOSListener;
 import simulation.Address;
 public class ResidentialBuilding implements Simulatable , Rescuable {
@@ -49,7 +49,10 @@ public int getStructuralIntegrity() {
 
 public void setFireDamage(int fireDamage) {
 	if(fireDamage<=0) fireDamage=0;
-	else if(fireDamage>=100) fireDamage=100;
+	else if(fireDamage>=100) {
+		fireDamage=100;
+		
+	}
 	else
 	this.fireDamage = fireDamage;
 }
@@ -91,6 +94,7 @@ public void setEmergencyService(SOSListener emergencyService) {
 	this.emergencyService = emergencyService;
 }
 public void cycleStep(){
+	if(this.disaster.isActive()){
 	if(this.foundationDamage>0){
 		Random r= new Random();
 		int x=r.nextInt(6)+5;
@@ -108,9 +112,12 @@ public void cycleStep(){
 	this.setStructuralIntegrity(n);
 	}
 	//fadel gaslevel msh by-affect directly
-}
+}}
 @Override
 public void struckBy(Disaster d) {
+	this.disaster = d;
+	d.setActive(true);
+	this.emergencyService.receiveSOSCall(this);
 	// TODO Auto-generated method stub
 	
 }
