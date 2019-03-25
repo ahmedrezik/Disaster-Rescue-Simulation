@@ -1,0 +1,1035 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="M2PublicTests" project="RescueSimulation_M1" tests="116" started="116" failures="15" errors="41" ignored="0">
+  <testsuite name="tests.M2PublicTests" time="0.399">
+    <testcase name="testInstanceVariableEmergencyServiceResidentialBuilding" classname="tests.M2PublicTests" time="0.0"/>
+    <testcase name="testConstructorUnit" classname="tests.M2PublicTests" time="0.0"/>
+    <testcase name="testEvacuatorTreatLogic" classname="tests.M2PublicTests" time="0.009">
+      <failure>java.lang.AssertionError: Number of citizens remaining in the building was wrong expected:&lt;1&gt; but was:&lt;3&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.failNotEquals(Assert.java:743)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:118)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:555)&#13;
+	at tests.M2PublicTests.testEvacuatorTreatLogic(M2PublicTests.java:2574)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testEvacuatorTreatLogicCycle4CitizensStates" classname="tests.M2PublicTests" time="0.004"/>
+    <testcase name="testEvacuatorTreatLogicCycle2UnitLocation" classname="tests.M2PublicTests" time="0.002">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Evacuator(String, Address, int, null, int) is undefined
+&#13;
+	at tests.M2PublicTests.testEvacuatorTreatLogicCycle2UnitLocation(M2PublicTests.java:1695)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testFireTruckTreat" classname="tests.M2PublicTests" time="0.002"/>
+    <testcase name="testStrikeInjury" classname="tests.M2PublicTests" time="0.001"/>
+    <testcase name="testEvacuatorTreatLogicCycle0CitizensLocations" classname="tests.M2PublicTests" time="0.002">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Evacuator(String, Address, int, null, int) is undefined
+&#13;
+	at tests.M2PublicTests.testEvacuatorTreatLogicCycle0CitizensLocations(M2PublicTests.java:1379)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testMedicalUnitHealLogic" classname="tests.M2PublicTests" time="0.005">
+      <failure>java.lang.AssertionError: Units should become IDLE after completing their treatment&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:41)&#13;
+	at tests.M2PublicTests.testMedicalUnitHealLogic(M2PublicTests.java:1072)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testEvacuatorTreatLogicCycle0PassengersSize" classname="tests.M2PublicTests" time="0.001">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Evacuator(String, Address, int, null, int) is undefined
+&#13;
+	at tests.M2PublicTests.testEvacuatorTreatLogicCycle0PassengersSize(M2PublicTests.java:1313)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testResidentialBuildingCycleStep" classname="tests.M2PublicTests" time="0.001"/>
+    <testcase name="testCitizenBloodLossSetterKillsWhenOneHundred" classname="tests.M2PublicTests" time="0.002"/>
+    <testcase name="testGasControlUnitTreat" classname="tests.M2PublicTests" time="0.002"/>
+    <testcase name="testCitizenDisasterAfterUnitRespondFromTreatingLogic" classname="tests.M2PublicTests" time="0.005"/>
+    <testcase name="testCitizenCycleStepWithToxicityUnderThirty" classname="tests.M2PublicTests" time="0.007"/>
+    <testcase name="testUnitRespondFromTreatingLogic" classname="tests.M2PublicTests" time="0.005">
+      <failure>java.lang.AssertionError: Unit respond should update the distanceToTarget correctly.&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:41)&#13;
+	at tests.M2PublicTests.testUnitRespondFromTreatingLogic(M2PublicTests.java:962)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testEvacuatorTreatLogicCycle1UnitLocation" classname="tests.M2PublicTests" time="0.001">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Evacuator(String, Address, int, null, int) is undefined
+&#13;
+	at tests.M2PublicTests.testEvacuatorTreatLogicCycle1UnitLocation(M2PublicTests.java:1471)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testResidentialBuildingFoundationDamageDoesnotAffectOccupants" classname="tests.M2PublicTests" time="0.001"/>
+    <testcase name="testUnitCycleStep" classname="tests.M2PublicTests" time="0.001"/>
+    <testcase name="testConstructorSimulator" classname="tests.M2PublicTests" time="0.001"/>
+    <testcase name="testResidentialBuildingFoundationDamageSetterChangesIntegrity" classname="tests.M2PublicTests" time="0.001"/>
+    <testcase name="testEvacuatorTreatLogicCycle4CitizensLocations" classname="tests.M2PublicTests" time="0.001">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Evacuator(String, Address, int, null, int) is undefined
+&#13;
+	at tests.M2PublicTests.testEvacuatorTreatLogicCycle4CitizensLocations(M2PublicTests.java:2089)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testEvacuatorTreatLogicCycle4DistanceToTarget" classname="tests.M2PublicTests" time="0.001">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Evacuator(String, Address, int, null, int) is undefined
+&#13;
+	at tests.M2PublicTests.testEvacuatorTreatLogicCycle4DistanceToTarget(M2PublicTests.java:1919)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testCitizenCycleStepWhenHealthy" classname="tests.M2PublicTests" time="0.001"/>
+    <testcase name="testEvacuatorTreatLogicCycle0UnitLocation" classname="tests.M2PublicTests" time="0.002">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Evacuator(String, Address, int, null, int) is undefined
+&#13;
+	at tests.M2PublicTests.testEvacuatorTreatLogicCycle0UnitLocation(M2PublicTests.java:1248)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testCitizenStruckByNotifiesListener" classname="tests.M2PublicTests" time="0.002">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Simulator() is undefined
+&#13;
+	at controller.CommandCenter.&lt;init&gt;(CommandCenter.java:21)&#13;
+	at tests.M2PublicTests$25.&lt;init&gt;(M2PublicTests.java:3356)&#13;
+	at tests.M2PublicTests.testCitizenStruckByNotifiesListener(M2PublicTests.java:3356)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testEvacuatorTreatLogicCycle4OccupantsSize" classname="tests.M2PublicTests" time="0.002">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Evacuator(String, Address, int, null, int) is undefined
+&#13;
+	at tests.M2PublicTests.testEvacuatorTreatLogicCycle4OccupantsSize(M2PublicTests.java:2053)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testEvacuatorTreatLogicCycle8CitizensLocations" classname="tests.M2PublicTests" time="0.001">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Evacuator(String, Address, int, null, int) is undefined
+&#13;
+	at tests.M2PublicTests.testEvacuatorTreatLogicCycle8CitizensLocations(M2PublicTests.java:2420)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testCycleStepGasLeak" classname="tests.M2PublicTests" time="0.002">
+      <failure>java.lang.AssertionError: Method "cycleStep" in class "GasLeak" should set the "gasLevel" to 15 by cycle 1 but was 10&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:41)&#13;
+	at tests.M2PublicTests.testCycleStepGasLeak(M2PublicTests.java:2776)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testEvacuatorTreatLogicCycle1DistanceToBase" classname="tests.M2PublicTests" time="0.002">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Evacuator(String, Address, int, null, int) is undefined
+&#13;
+	at tests.M2PublicTests.testEvacuatorTreatLogicCycle1DistanceToBase(M2PublicTests.java:1438)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testCitizenBloodLossSetterDoesNotDamageHP" classname="tests.M2PublicTests" time="0.002"/>
+    <testcase name="testUnitJobsDone" classname="tests.M2PublicTests" time="0.001"/>
+    <testcase name="testAssignAddress" classname="tests.M2PublicTests" time="0.005">
+      <failure>java.lang.AssertionError: Assign address  expected:&lt;simulation.Address@1a6258f&gt; but was:&lt;simulation.Address@161c60b&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.failNotEquals(Assert.java:743)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:118)&#13;
+	at tests.M2PublicTests.testAssignAddress(M2PublicTests.java:2945)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testEvacuatorTreatLogicCycle8UnitState" classname="tests.M2PublicTests" time="0.001">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Evacuator(String, Address, int, null, int) is undefined
+&#13;
+	at tests.M2PublicTests.testEvacuatorTreatLogicCycle8UnitState(M2PublicTests.java:2320)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testEvacuatorTreatLogicCycle4DistanceToBase" classname="tests.M2PublicTests" time="0.001">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Evacuator(String, Address, int, null, int) is undefined
+&#13;
+	at tests.M2PublicTests.testEvacuatorTreatLogicCycle4DistanceToBase(M2PublicTests.java:1885)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testInstanceVariableEmergencyUnitsGetterAndSetter" classname="tests.M2PublicTests" time="0.002"/>
+    <testcase name="testEvacuatorTreat" classname="tests.M2PublicTests" time="0.002">
+      <failure>java.lang.AssertionError: The treat method in class Evacuator should be implemented.&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:41)&#13;
+	at tests.M2PublicTests.testExistsInClass(M2PublicTests.java:180)&#13;
+	at tests.M2PublicTests.testEvacuatorTreat(M2PublicTests.java:754)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testInstanceVariableUnitDistanceToTarget" classname="tests.M2PublicTests" time="0.001"/>
+    <testcase name="testCitizenCycleStepWithToxicityBetweenThirtyAndSeventy" classname="tests.M2PublicTests" time="0.004"/>
+    <testcase name="testAmbulanceTreatLogic" classname="tests.M2PublicTests" time="0.006">
+      <failure>java.lang.AssertionError: Ambulance should mark the citizen as RESCUED after treating their injury.&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:41)&#13;
+	at tests.M2PublicTests.testAmbulanceTreatLogic(M2PublicTests.java:1037)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testCitizenCycleStepWithToxicityBetweenSeventyAndHundred" classname="tests.M2PublicTests" time="0.005"/>
+    <testcase name="testUnitCycleStepRespondingAndArrivedLogic" classname="tests.M2PublicTests" time="0.056">
+      <failure>java.lang.AssertionError: Once the unit arrives to the target location its location should be updated.&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:41)&#13;
+	at tests.M2PublicTests.testUnitCycleStepRespondingAndArrivedLogic(M2PublicTests.java:1162)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testEvacuatorTreatLogicCycle8DistanceToTarget" classname="tests.M2PublicTests" time="0.002">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Evacuator(String, Address, int, null, int) is undefined
+&#13;
+	at tests.M2PublicTests.testEvacuatorTreatLogicCycle8DistanceToTarget(M2PublicTests.java:2221)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testCitizenInstanceVariableEmergencyService" classname="tests.M2PublicTests" time="0.001"/>
+    <testcase name="testSimulatorInitializeUnitListener" classname="tests.M2PublicTests" time="0.005"/>
+    <testcase name="testInstanceVariableSimulatorEmergencyService" classname="tests.M2PublicTests" time="0.001"/>
+    <testcase name="testEvacuatorTreatLogicCycle2OccupantsSize" classname="tests.M2PublicTests" time="0.013"/>
+    <testcase name="testEvacuatorTreatLogicCycle1PassengersSize" classname="tests.M2PublicTests" time="0.001">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Evacuator(String, Address, int, null, int) is undefined
+&#13;
+	at tests.M2PublicTests.testEvacuatorTreatLogicCycle1PassengersSize(M2PublicTests.java:1536)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testConstructorFireUnit" classname="tests.M2PublicTests" time="0.001"/>
+    <testcase name="testResidentialBuildingStructuralIntegritySetterLowerBound" classname="tests.M2PublicTests" time="0.001"/>
+    <testcase name="testEvacuatorTreatLogicCycle8CitizensStates" classname="tests.M2PublicTests" time="0.002">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Evacuator(String, Address, int, null, int) is undefined
+&#13;
+	at tests.M2PublicTests.testEvacuatorTreatLogicCycle8CitizensStates(M2PublicTests.java:2493)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testCitizenHPSetterBounds" classname="tests.M2PublicTests" time="0.002"/>
+    <testcase name="testEvacuatorTreatLogicCycle4UnitState" classname="tests.M2PublicTests" time="0.001">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Evacuator(String, Address, int, null, int) is undefined
+&#13;
+	at tests.M2PublicTests.testEvacuatorTreatLogicCycle4UnitState(M2PublicTests.java:1986)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testConstructorPoliceUnit" classname="tests.M2PublicTests" time="0.001">
+      <failure>java.lang.AssertionError: Missing constructor with String and Address and int and WorldListener and int  parameters in PoliceUnit class.&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:41)&#13;
+	at org.junit.Assert.assertFalse(Assert.java:64)&#13;
+	at tests.M2PublicTests.testConstructorExists(M2PublicTests.java:384)&#13;
+	at tests.M2PublicTests.testConstructorPoliceUnit(M2PublicTests.java:721)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testEvacuatorTreatLogicCycle4PassengersSize" classname="tests.M2PublicTests" time="0.001">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Evacuator(String, Address, int, null, int) is undefined
+&#13;
+	at tests.M2PublicTests.testEvacuatorTreatLogicCycle4PassengersSize(M2PublicTests.java:2020)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testCitizenStruckBySetsDisasterCorrectly" classname="tests.M2PublicTests" time="0.002">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Simulator() is undefined
+&#13;
+	at controller.CommandCenter.&lt;init&gt;(CommandCenter.java:21)&#13;
+	at tests.M2PublicTests.testCitizenStruckBySetsDisasterCorrectly(M2PublicTests.java:3306)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testUnitRespondFromRespondingLogic" classname="tests.M2PublicTests" time="0.002">
+      <failure>java.lang.AssertionError: Unit respond should update the unitState Correctly. expected:&lt;RESPONDING&gt; but was:&lt;IDLE&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.failNotEquals(Assert.java:743)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:118)&#13;
+	at tests.M2PublicTests.testUnitRespondFromRespondingLogic(M2PublicTests.java:935)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testResidentialBuildingEmergencyServiceSetterLogic" classname="tests.M2PublicTests" time="0.002">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Simulator() is undefined
+&#13;
+	at controller.CommandCenter.&lt;init&gt;(CommandCenter.java:21)&#13;
+	at tests.M2PublicTests.testResidentialBuildingEmergencyServiceSetterLogic(M2PublicTests.java:3657)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testUnitTreat" classname="tests.M2PublicTests" time="0.001"/>
+    <testcase name="testEvacuatorTreatLogicCycle1OccupantsSize" classname="tests.M2PublicTests" time="0.002">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Evacuator(String, Address, int, null, int) is undefined
+&#13;
+	at tests.M2PublicTests.testEvacuatorTreatLogicCycle1OccupantsSize(M2PublicTests.java:1569)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testEvacuatorTreatLogicCycle2UnitState" classname="tests.M2PublicTests" time="0.001">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Evacuator(String, Address, int, null, int) is undefined
+&#13;
+	at tests.M2PublicTests.testEvacuatorTreatLogicCycle2UnitState(M2PublicTests.java:1727)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testUnitCallsTreat" classname="tests.M2PublicTests" time="0.005"/>
+    <testcase name="testEvacuatorTreatLogicCycle2DistanceToBase" classname="tests.M2PublicTests" time="0.001">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Evacuator(String, Address, int, null, int) is undefined
+&#13;
+	at tests.M2PublicTests.testEvacuatorTreatLogicCycle2DistanceToBase(M2PublicTests.java:1662)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testResidentialBuildingFireDamageSetterLowerBound" classname="tests.M2PublicTests" time="0.002"/>
+    <testcase name="testEvacuatorTreatLogicCycle2CitizensLocations" classname="tests.M2PublicTests" time="0.001">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Evacuator(String, Address, int, null, int) is undefined
+&#13;
+	at tests.M2PublicTests.testEvacuatorTreatLogicCycle2CitizensLocations(M2PublicTests.java:1827)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testEvacuatorTreatLogicCycle1UnitState" classname="tests.M2PublicTests" time="0.001">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Evacuator(String, Address, int, null, int) is undefined
+&#13;
+	at tests.M2PublicTests.testEvacuatorTreatLogicCycle1UnitState(M2PublicTests.java:1503)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testCycleStepInfection" classname="tests.M2PublicTests" time="0.001"/>
+    <testcase name="testUnitCycleStepRespondingLogic" classname="tests.M2PublicTests" time="0.005">
+      <failure>java.lang.AssertionError: respond should change the unitState to RESPONDING.&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:41)&#13;
+	at tests.M2PublicTests.testUnitCycleStepRespondingLogic(M2PublicTests.java:1114)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testEvacuatorTreatLogicCycle8UnitLocation" classname="tests.M2PublicTests" time="0.001">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Evacuator(String, Address, int, null, int) is undefined
+&#13;
+	at tests.M2PublicTests.testEvacuatorTreatLogicCycle8UnitLocation(M2PublicTests.java:2287)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testEvacuatorTreatLogicCycle0UnitState" classname="tests.M2PublicTests" time="0.001">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Evacuator(String, Address, int, null, int) is undefined
+&#13;
+	at tests.M2PublicTests.testEvacuatorTreatLogicCycle0UnitState(M2PublicTests.java:1281)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testResidentialBuildingStruckBy" classname="tests.M2PublicTests" time="0.001"/>
+    <testcase name="NonActiveDisasterCallStrike" classname="tests.M2PublicTests" time="0.006"/>
+    <testcase name="testEvacuatorTreatLogicCycle0OccupantsSize" classname="tests.M2PublicTests" time="0.002">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Evacuator(String, Address, int, null, int) is undefined
+&#13;
+	at tests.M2PublicTests.testEvacuatorTreatLogicCycle0OccupantsSize(M2PublicTests.java:1346)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testConstructorAmbulanceUnit" classname="tests.M2PublicTests" time="0.002"/>
+    <testcase name="testEvacuatorTreatLogicCycle8DistanceToBase" classname="tests.M2PublicTests" time="0.002">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Evacuator(String, Address, int, null, int) is undefined
+&#13;
+	at tests.M2PublicTests.testEvacuatorTreatLogicCycle8DistanceToBase(M2PublicTests.java:2254)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testInstanceVariableUnitDistanceToTargetGetterAndSetter" classname="tests.M2PublicTests" time="0.002"/>
+    <testcase name="testEvacuatorTreatLogicCycle8OccupantsSize" classname="tests.M2PublicTests" time="0.002">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Evacuator(String, Address, int, null, int) is undefined
+&#13;
+	at tests.M2PublicTests.testEvacuatorTreatLogicCycle8OccupantsSize(M2PublicTests.java:2385)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testInstanceVariableUnitListener" classname="tests.M2PublicTests" time="0.0"/>
+    <testcase name="testResidentialBuildingStructuralIntegrityLessOrEqualZeroKillsAllOccupants" classname="tests.M2PublicTests" time="0.001"/>
+    <testcase name="testResidentialBuildingCycleStep1" classname="tests.M2PublicTests" time="0.0"/>
+    <testcase name="testResidentialBuildingCycleStep6" classname="tests.M2PublicTests" time="0.0"/>
+    <testcase name="testConstructorMedicalUnit" classname="tests.M2PublicTests" time="0.0"/>
+    <testcase name="testCitizenBloodLossSetterBounds" classname="tests.M2PublicTests" time="0.0"/>
+    <testcase name="testEvacuatorTreatLogicCycle2PassengersSize" classname="tests.M2PublicTests" time="0.0">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Evacuator(String, Address, int, null, int) is undefined
+&#13;
+	at tests.M2PublicTests.testEvacuatorTreatLogicCycle2PassengersSize(M2PublicTests.java:1760)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testInstanceVariableEmergencyServiceGetterAndSetter" classname="tests.M2PublicTests" time="0.0"/>
+    <testcase name="testSimulatorInitializeBuildingListener" classname="tests.M2PublicTests" time="0.001"/>
+    <testcase name="testCompoundDisaster0" classname="tests.M2PublicTests" time="0.0"/>
+    <testcase name="testCompoundDisaster1" classname="tests.M2PublicTests" time="0.0"/>
+    <testcase name="testCompoundDisaster2" classname="tests.M2PublicTests" time="0.0"/>
+    <testcase name="testResidentialBuildingFireDamageDoesnotAffectOccupants" classname="tests.M2PublicTests" time="0.0"/>
+    <testcase name="testUnitJobsDoneLogic" classname="tests.M2PublicTests" time="0.0">
+      <failure>java.lang.AssertionError: Unit jobsDone should nullify its target expected:&lt;null&gt; but was:&lt;model.people.Citizen@7f8bd8&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.failNotEquals(Assert.java:743)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:118)&#13;
+	at tests.M2PublicTests.testUnitJobsDoneLogic(M2PublicTests.java:908)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testInstanceVariableUnitWorldListenerSetterLogic" classname="tests.M2PublicTests" time="0.001"/>
+    <testcase name="testCitizenHPSetterUpdatesStateOnDeath" classname="tests.M2PublicTests" time="0.0"/>
+    <testcase name="testNextStepIsCalledInSimulator" classname="tests.M2PublicTests" time="0.011">
+      <error>java.lang.ClassCastException: model.people.Citizen cannot be cast to model.infrastructure.ResidentialBuilding&#13;
+	at simulation.Simulator.getDisasterType(Simulator.java:286)&#13;
+	at simulation.Simulator.nextCycle(Simulator.java:265)&#13;
+	at tests.M2PublicTests.testNextStepIsCalledInSimulator(M2PublicTests.java:2985)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testInstanceVariableUnitWorldListenerGetterLogic" classname="tests.M2PublicTests" time="0.005"/>
+    <testcase name="testFireTruckTreatLogic" classname="tests.M2PublicTests" time="0.004">
+      <failure>java.lang.AssertionError: Values of building fire damage were wrong, expected 0 but was 10.&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:41)&#13;
+	at tests.M2PublicTests.testFireTruckTreatLogic(M2PublicTests.java:1193)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testCitizenInstanceVariableEmergencyServiceGetterAndSetter" classname="tests.M2PublicTests" time="0.002">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Simulator() is undefined
+&#13;
+	at controller.CommandCenter.&lt;init&gt;(CommandCenter.java:21)&#13;
+	at tests.M2PublicTests.testCitizenInstanceVariableEmergencyServiceGetterAndSetter(M2PublicTests.java:3292)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testGameOverCase1" classname="tests.M2PublicTests" time="0.008"/>
+    <testcase name="testGameOverCase2" classname="tests.M2PublicTests" time="0.004"/>
+    <testcase name="testGameOverCase3" classname="tests.M2PublicTests" time="0.006"/>
+    <testcase name="testEvacuatorTreatLogicCycle0DistanceToTarget" classname="tests.M2PublicTests" time="0.002">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Evacuator(String, Address, int, null, int) is undefined
+&#13;
+	at tests.M2PublicTests.testEvacuatorTreatLogicCycle0DistanceToTarget(M2PublicTests.java:1217)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testUnitRespond" classname="tests.M2PublicTests" time="0.002"/>
+    <testcase name="testEvacuatorTreatLogicCycle8PassengersSize" classname="tests.M2PublicTests" time="0.002">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Evacuator(String, Address, int, null, int) is undefined
+&#13;
+	at tests.M2PublicTests.testEvacuatorTreatLogicCycle8PassengersSize(M2PublicTests.java:2353)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testEvacuatorTreatLogicCycle4UnitLocation" classname="tests.M2PublicTests" time="0.002">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Evacuator(String, Address, int, null, int) is undefined
+&#13;
+	at tests.M2PublicTests.testEvacuatorTreatLogicCycle4UnitLocation(M2PublicTests.java:1953)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testCurrentCycleLogic" classname="tests.M2PublicTests" time="0.006"/>
+    <testcase name="testStrikeDisaster" classname="tests.M2PublicTests" time="0.012">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The type TestDisaster must implement the inherited abstract method Disaster.strike()
+&#13;
+	at tests.M2PublicTests$1TestDisaster.strike(M2PublicTests.java:2620)&#13;
+	at tests.M2PublicTests.testStrikeDisaster(M2PublicTests.java:2655)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testResidentialBuildingFireDamageSetterUpperBound" classname="tests.M2PublicTests" time="0.002">
+      <failure>java.lang.AssertionError: If the fire damage value in ResidentialBuilding class is set to be over 100, it should be set to 100 expected:&lt;100&gt; but was:&lt;0&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.failNotEquals(Assert.java:743)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:118)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:555)&#13;
+	at tests.M2PublicTests.testResidentialBuildingFireDamageSetterUpperBound(M2PublicTests.java:3720)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testEvacuatorTreatLogicCycle1CitizensLocation" classname="tests.M2PublicTests" time="0.001">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Evacuator(String, Address, int, null, int) is undefined
+&#13;
+	at tests.M2PublicTests.testEvacuatorTreatLogicCycle1CitizensLocation(M2PublicTests.java:1603)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testInstanceVariableUnitDistanceToTargetSetterLogic" classname="tests.M2PublicTests" time="0.002"/>
+    <testcase name="testStrikeFire" classname="tests.M2PublicTests" time="0.002">
+      <failure>java.lang.AssertionError: Method "strike" in class "Fire" should set the initial "fireDamage" to 10&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:41)&#13;
+	at tests.M2PublicTests.testStrikeFire(M2PublicTests.java:2705)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testResidentialBuildingFoundationDamageSetterUpperBound" classname="tests.M2PublicTests" time="0.002"/>
+    <testcase name="testResidentialBuildingStruckByNotifiesListener" classname="tests.M2PublicTests" time="0.001">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Simulator() is undefined
+&#13;
+	at controller.CommandCenter.&lt;init&gt;(CommandCenter.java:21)&#13;
+	at tests.M2PublicTests$26.&lt;init&gt;(M2PublicTests.java:3936)&#13;
+	at tests.M2PublicTests.testResidentialBuildingStruckByNotifiesListener(M2PublicTests.java:3936)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testCalculateCasualtiesLogic" classname="tests.M2PublicTests" time="0.001">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The method calculateCasualties() is undefined for the type Simulator
+&#13;
+	at tests.M2PublicTests.testCalculateCasualtiesLogic(M2PublicTests.java:2969)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testInstanceVariableResidentialBuildingEmergencyServiceGetterAndSetter" classname="tests.M2PublicTests" time="0.002"/>
+    <testcase name="testResidentialBuildingStruckBySetsDisasterCorrectly" classname="tests.M2PublicTests" time="0.001">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The constructor Simulator() is undefined
+&#13;
+	at controller.CommandCenter.&lt;init&gt;(CommandCenter.java:21)&#13;
+	at tests.M2PublicTests.testResidentialBuildingStruckBySetsDisasterCorrectly(M2PublicTests.java:3898)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testCycleStepCollapse" classname="tests.M2PublicTests" time="0.004"/>
+  </testsuite>
+</testrun>

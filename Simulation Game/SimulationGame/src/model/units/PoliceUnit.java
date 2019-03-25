@@ -39,9 +39,7 @@ public void setDistanceToBase(int distanceToBase) {
 }
 
 
-public void setPassengers(ArrayList<Citizen> passengers) {
-	this.passengers = passengers;
-}
+
 public void cycleStep(){
 	if(passengers.size()==0){
 		super.cycleStep();
@@ -58,5 +56,10 @@ public void treat(){
     if(this.passengers.size()==0 && ((ResidentialBuilding)this.getTarget()).getOccupants().size()==0){
     	this.jobsDone();
     }
+}
+
+
+public ArrayList<Citizen> getPassengers() {
+	return passengers;
 }
 }

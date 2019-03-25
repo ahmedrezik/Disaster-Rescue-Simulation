@@ -22,7 +22,7 @@ visibleCitizens=new ArrayList<Citizen>();
 emergencyUnits=new ArrayList<Unit>();
 }
 public void receiveSOSCall(Rescuable r){
- 
+	 
 }
 
 }
