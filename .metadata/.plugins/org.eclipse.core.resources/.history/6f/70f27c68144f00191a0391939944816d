@@ -1,0 +1,28 @@
+package model.disasters;
+
+import model.people.Citizen;
+
+public class Injury extends Disaster {
+
+	public Injury(int startCycle, Citizen target) {
+
+		super(startCycle, target);
+
+	}
+	public void strike(){ 
+		this.setActive(true);
+		int x = ((Citizen)getTarget()).getBloodLoss();
+		((Citizen)getTarget()).setBloodLoss(x+30);
+		((Citizen)getTarget()).struckBy(this);
+		
+		
+		}
+public void cycleStep(){
+		
+		
+		int z = ((Citizen)getTarget()).getBloodLoss();
+		
+		((Citizen)getTarget()).setBloodLoss(z+10);
+
+}
+}

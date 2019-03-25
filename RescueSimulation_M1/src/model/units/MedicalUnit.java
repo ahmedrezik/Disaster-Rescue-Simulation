@@ -21,9 +21,8 @@ public abstract class MedicalUnit extends Unit {
 		return treatmentAmount;
 	}
    public void heal(){
-	   if(((Citizen)this.getTarget()).getHp()==100)
-		   this.jobsDone();
-	   else
 	       ((Citizen)this.getTarget()).setHp(((Citizen)this.getTarget()).getHp()+this.healingAmount);
+	       if(((Citizen)this.getTarget()).getHp()==100)
+			   this.jobsDone();
 }
  }

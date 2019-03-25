@@ -14,8 +14,8 @@ public class Infection extends Disaster {
 		this.setActive(true);
 		int x = ((Citizen)getTarget()).getToxicity();
 		((Citizen)getTarget()).setToxicity(x+25);
-		((Citizen)getTarget()).struckBy(this);
-		
+		//((Citizen)getTarget()).struckBy(this);
+		super.strike();
 		
 		}
 public void cycleStep(){

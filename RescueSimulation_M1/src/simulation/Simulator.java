@@ -220,7 +220,7 @@ public class Simulator implements WorldListener{
 		   if (sim instanceof Citizen){
 			((Citizen)sim).setLocation(world[x][y]);
 		}
-		   if (sim instanceof Citizen){
+		   if (sim instanceof Unit){
 				((Unit)sim).setLocation(world[x][y]);
 			}
 
@@ -262,11 +262,11 @@ public class Simulator implements WorldListener{
 			this.currentCycle++;
 			for(int i=0;i<this.plannedDisasters.size();i++){
 				if(this.plannedDisasters.get(i).getStartCycle()==this.currentCycle){
-					if(getDisasterType(this.plannedDisasters.get(i))!=null)
+					if(getDisasterType(this.plannedDisasters.get(i))!=null){
 					this.executedDisasters.add(getDisasterType(this.plannedDisasters.get(i)));
 					this.getDisasterType(this.plannedDisasters.get(i)).strike();
 					this.plannedDisasters.remove(i);
-				}
+				}}
 			}
 			for(int i=0;i<this.emergencyUnits.size();i++){
 				this.emergencyUnits.get(i).cycleStep();
@@ -283,7 +283,12 @@ public class Simulator implements WorldListener{
 		public Disaster getDisasterType(Disaster planned){
 			if(planned instanceof Infection) return new Infection(this.currentCycle,((Citizen)planned.getTarget()));
 			if(planned instanceof Injury) return new Injury(this.currentCycle,((Citizen)planned.getTarget()));
-			if(((ResidentialBuilding)planned.getTarget()).getFireDamage()==100||planned instanceof Collapse){
+			if(planned.getTarget() instanceof ResidentialBuilding && ((ResidentialBuilding)planned.getTarget()).getFireDamage()==100){
+				((ResidentialBuilding)planned.getTarget()).setFireDamage(0);
+				//wording ghareeb gdan
+				return new Collapse(this.currentCycle,((ResidentialBuilding)planned.getTarget()));
+			}
+			if(planned instanceof Collapse){
 				((ResidentialBuilding)planned.getTarget()).setFireDamage(0);
 				//wording ghareeb gdan
 				return new Collapse(this.currentCycle,((ResidentialBuilding)planned.getTarget()));
@@ -300,6 +305,8 @@ public class Simulator implements WorldListener{
 					return null;
 				}
 			}
+			if(planned.getTarget() instanceof ResidentialBuilding)
 			return new Collapse(this.currentCycle,((ResidentialBuilding)planned.getTarget()));
+			return null;
 		}
 }

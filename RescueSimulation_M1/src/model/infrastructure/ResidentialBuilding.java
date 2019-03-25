@@ -53,8 +53,7 @@ public class ResidentialBuilding implements Rescuable, Simulatable {
 	public void setFireDamage(int fireDamage) {
 		if(fireDamage<=0) fireDamage=0;
 		else if(fireDamage>=100) {
-			fireDamage=100;
-			
+			this.fireDamage=100;
 		}
 		else
 		this.fireDamage = fireDamage;

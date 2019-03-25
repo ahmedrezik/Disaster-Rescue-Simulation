@@ -14,13 +14,12 @@ public class Ambulance extends MedicalUnit {
 	}
 	public void treat(){
 		super.treat();
+		((Citizen)this.getTarget()).setBloodLoss(((Citizen)this.getTarget()).getBloodLoss()-this.getTreatmentAmount());
 		if ( ((Citizen)this.getTarget()).getBloodLoss() == 100)
-		 this.jobsDone();
-		else if(((Citizen)this.getTarget()).getBloodLoss()==0 ){
+			 this.jobsDone();
+		if(((Citizen)this.getTarget()).getBloodLoss()==0 ){
 			((Citizen)this.getTarget()).setState(CitizenState.RESCUED);
 			this.heal();}
-		else
-		((Citizen)this.getTarget()).setBloodLoss(((Citizen)this.getTarget()).getBloodLoss()-this.getTreatmentAmount());
 		
 	}
 

@@ -13,7 +13,8 @@ public class Collapse extends Disaster {
 		this.setActive(true);
 		int x = ((ResidentialBuilding)getTarget()).getFoundationDamage();
 		((ResidentialBuilding)getTarget()).setFoundationDamage(x+10);
-		((ResidentialBuilding)getTarget()).struckBy(this);
+		//((ResidentialBuilding)getTarget()).struckBy(this);
+		super.strike();
 		
 		
 		}

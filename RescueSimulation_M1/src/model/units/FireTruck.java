@@ -12,13 +12,12 @@ public class FireTruck extends FireUnit {
 
 	}
 	public void treat(){
-		super.treat();
-		if (((ResidentialBuilding)this.getTarget()).getFireDamage()==0 || ((ResidentialBuilding)this.getTarget()).getFireDamage() == 100)
-		 this.jobsDone();
-			else
+		super.treat();	
 		((ResidentialBuilding)this.getTarget()).setFireDamage(((ResidentialBuilding)this.getTarget()).getFireDamage()-10);
-
-		 
+		if (((ResidentialBuilding)this.getTarget()).getFireDamage()==0 || ((ResidentialBuilding)this.getTarget()).getFireDamage() == 100)
+			 this.jobsDone();
+				
+			 
 		
 	}
 }

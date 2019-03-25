@@ -13,8 +13,8 @@ public class Injury extends Disaster {
 		this.setActive(true);
 		int x = ((Citizen)getTarget()).getBloodLoss();
 		((Citizen)getTarget()).setBloodLoss(x+30);
-		((Citizen)getTarget()).struckBy(this);
-		
+		//((Citizen)getTarget()).struckBy(this);
+		super.strike();
 		
 		}
 public void cycleStep(){

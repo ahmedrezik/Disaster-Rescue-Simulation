@@ -87,6 +87,7 @@ public abstract class Unit implements Simulatable, SOSResponder {
 		this.target.getDisaster().setActive(false);
 	}
 	public void jobsDone(){
+		this.target=null;
 		this.setState(UnitState.IDLE);
 	}
 	public void respond(Rescuable r){
@@ -102,8 +103,9 @@ public abstract class Unit implements Simulatable, SOSResponder {
 	    	this.target.getDisaster().setActive(true);
 	    }}
 		this.target=r;
+		this.state=UnitState.RESPONDING;
 		this.setDistanceToTarget(getManhattanDistance(this.getLocation(),this.target.getLocation()));
-	
+	    
 	}
 	public int getManhattanDistance(Address x,Address y){
 		return Math.abs(x.getX()-y.getX())+Math.abs(x.getY()-y.getY());

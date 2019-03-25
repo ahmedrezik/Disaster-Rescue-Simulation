@@ -11,10 +11,10 @@ public class GasLeak extends Disaster {
 	}
 	public void strike(){ 
 		this.setActive(true);
-		int x = ((ResidentialBuilding)getTarget()).getFireDamage();
-		((ResidentialBuilding)getTarget()).setFireDamage(x+10);
-		((ResidentialBuilding)getTarget()).struckBy(this);
-		
+		int x = ((ResidentialBuilding)getTarget()).getGasLevel();
+		((ResidentialBuilding)getTarget()).setGasLevel(x+10);
+		//((ResidentialBuilding)getTarget()).struckBy(this);
+		super.strike();
 		
 		}
 	public void cycleStep(){
@@ -22,7 +22,7 @@ public class GasLeak extends Disaster {
 		
 		int z = ((ResidentialBuilding)getTarget()).getGasLevel();
 		
-		((ResidentialBuilding)getTarget()).setGasLevel(z+10);
+		((ResidentialBuilding)getTarget()).setGasLevel(z+15);
 	
 	
 
