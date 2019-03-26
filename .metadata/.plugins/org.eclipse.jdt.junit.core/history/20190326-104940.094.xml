@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Rerun M2PublicTest (Failed Tests first)" project="RescueSimulation_M1" tests="116" started="116" failures="16" errors="2" ignored="0">
+  <testsuite name="tests.M2PublicTest" time="0.495">
+    <testcase name="testEvacuatorTreatLogicCycle4UnitLocation" classname="tests.M2PublicTest" time="0.01">
+      <failure>java.lang.AssertionError: Unit location should not be updated while en route. expected:&lt;simulation.Address@1156dc3&gt; but was:&lt;simulation.Address@12742e7&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.failNotEquals(Assert.java:743)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:118)&#13;
+	at tests.M2PublicTest.testEvacuatorTreatLogicCycle4UnitLocation(M2PublicTest.java:1977)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testNextStepIsCalledInSimulator" classname="tests.M2PublicTest" time="0.01">
+      <failure>java.lang.AssertionError: nextCycle method in Simulator class should call strike method over planned disasters &#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:41)&#13;
+	at tests.M2PublicTest.testNextStepIsCalledInSimulator(M2PublicTest.java:2990)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testEvacuatorTreatLogicCycle8OccupantsSize" classname="tests.M2PublicTest" time="0.005">
+      <failure>java.lang.AssertionError: Number of citizens remaining in the building should not be changed till evacuation restarts. expected:&lt;1&gt; but was:&lt;3&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.failNotEquals(Assert.java:743)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:118)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:555)&#13;
+	at tests.M2PublicTest.testEvacuatorTreatLogicCycle8OccupantsSize(M2PublicTest.java:2408)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testEvacuatorTreatLogicCycle8DistanceToBase" classname="tests.M2PublicTest" time="0.005">
+      <failure>java.lang.AssertionError: Evacuator distanceToBase should be updated while returning to Base. expected:&lt;12&gt; but was:&lt;-45&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.failNotEquals(Assert.java:743)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:118)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:555)&#13;
+	at tests.M2PublicTest.testEvacuatorTreatLogicCycle8DistanceToBase(M2PublicTest.java:2277)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="NonActiveDisasterCallStrike" classname="tests.M2PublicTest" time="0.006">
+      <error>java.lang.NullPointerException&#13;
+	at model.units.Ambulance.treat(Ambulance.java:17)&#13;
+	at model.units.Unit.cycleStep(Unit.java:81)&#13;
+	at simulation.Simulator.nextCycle(Simulator.java:272)&#13;
+	at tests.M2PublicTest.NonActiveDisasterCallStrike(M2PublicTest.java:3258)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testEvacuatorTreatLogicCycle2DistanceToBase" classname="tests.M2PublicTest" time="0.005">
+      <failure>java.lang.AssertionError: Evacuator distanceToBase should be updated while returning to Base. expected:&lt;7&gt; but was:&lt;-10&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.failNotEquals(Assert.java:743)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:118)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:555)&#13;
+	at tests.M2PublicTest.testEvacuatorTreatLogicCycle2DistanceToBase(M2PublicTest.java:1684)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testEvacuatorTreatLogicCycle4PassengersSize" classname="tests.M2PublicTest" time="0.005">
+      <failure>java.lang.AssertionError: Evacuator should drop citizens upon reaching the base. expected:&lt;0&gt; but was:&lt;2&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.failNotEquals(Assert.java:743)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:118)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:555)&#13;
+	at tests.M2PublicTest.testEvacuatorTreatLogicCycle4PassengersSize(M2PublicTest.java:2044)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testEvacuatorTreatLogicCycle8CitizensStates" classname="tests.M2PublicTest" time="0.005">
+      <failure>java.lang.AssertionError: first Citizen state should be rescued but was SAFE expected:&lt;RESCUED&gt; but was:&lt;SAFE&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.failNotEquals(Assert.java:743)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:118)&#13;
+	at tests.M2PublicTest.testEvacuatorTreatLogicCycle8CitizensStates(M2PublicTest.java:2531)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testEvacuatorTreat" classname="tests.M2PublicTest" time="0.002">
+      <failure>java.lang.AssertionError: The treat method in class Evacuator should be implemented.&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:41)&#13;
+	at tests.M2PublicTest.testExistsInClass(M2PublicTest.java:180)&#13;
+	at tests.M2PublicTest.testEvacuatorTreat(M2PublicTest.java:754)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testEvacuatorTreatLogicCycle4DistanceToBase" classname="tests.M2PublicTest" time="0.004">
+      <failure>java.lang.AssertionError: Evacuator distanceToBase should be updated while returning to Base. expected:&lt;0&gt; but was:&lt;-25&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.failNotEquals(Assert.java:743)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:118)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:555)&#13;
+	at tests.M2PublicTest.testEvacuatorTreatLogicCycle4DistanceToBase(M2PublicTest.java:1908)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testAssignAddress" classname="tests.M2PublicTest" time="0.004">
+      <error>java.lang.NullPointerException&#13;
+	at model.units.Unit.setLocation(Unit.java:44)&#13;
+	at simulation.Simulator.assignAddress(Simulator.java:224)&#13;
+	at tests.M2PublicTest.testAssignAddress(M2PublicTest.java:2945)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testEvacuatorTreatLogicCycle1DistanceToBase" classname="tests.M2PublicTest" time="0.005">
+      <failure>java.lang.AssertionError: Evacuator distanceToBase should be updated before returning to Base. expected:&lt;12&gt; but was:&lt;-5&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.failNotEquals(Assert.java:743)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:118)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:555)&#13;
+	at tests.M2PublicTest.testEvacuatorTreatLogicCycle1DistanceToBase(M2PublicTest.java:1460)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testEvacuatorTreatLogicCycle8CitizensLocations" classname="tests.M2PublicTest" time="0.014">
+      <failure>java.lang.AssertionError: first Citizen should be in the location 0 0 but was 3 9 expected:&lt;simulation.Address@fcbb67&gt; but was:&lt;simulation.Address@3b5fc8&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.failNotEquals(Assert.java:743)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:118)&#13;
+	at tests.M2PublicTest.testEvacuatorTreatLogicCycle8CitizensLocations(M2PublicTest.java:2457)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testEvacuatorTreatLogicCycle4DistanceToTarget" classname="tests.M2PublicTest" time="0.005">
+      <failure>java.lang.AssertionError: Unit distanceToTarget should be updated after each cycle.&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:41)&#13;
+	at tests.M2PublicTest.testEvacuatorTreatLogicCycle4DistanceToTarget(M2PublicTest.java:1943)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testEvacuatorTreatLogicCycle4CitizensLocations" classname="tests.M2PublicTest" time="0.004">
+      <failure>java.lang.AssertionError: first Citizen should be in the location 0 0 but was 3 9 expected:&lt;simulation.Address@10ab54b&gt; but was:&lt;simulation.Address@1cd5bda&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.failNotEquals(Assert.java:743)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:118)&#13;
+	at tests.M2PublicTest.testEvacuatorTreatLogicCycle4CitizensLocations(M2PublicTest.java:2126)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testEvacuatorTreatLogicCycle4CitizensStates" classname="tests.M2PublicTest" time="0.006">
+      <failure>java.lang.AssertionError: first Citizen state should be rescued but was SAFE expected:&lt;RESCUED&gt; but was:&lt;SAFE&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.failNotEquals(Assert.java:743)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:118)&#13;
+	at tests.M2PublicTest.testEvacuatorTreatLogicCycle4CitizensStates(M2PublicTest.java:2200)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testEvacuatorTreatLogic" classname="tests.M2PublicTest" time="0.007">
+      <failure>java.lang.AssertionError: Number of citizens remaining in the building was wrong expected:&lt;1&gt; but was:&lt;3&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.failNotEquals(Assert.java:743)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:118)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:555)&#13;
+	at tests.M2PublicTest.testEvacuatorTreatLogic(M2PublicTest.java:2575)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testInstanceVariableEmergencyServiceResidentialBuilding" classname="tests.M2PublicTest" time="0.001"/>
+    <testcase name="testConstructorUnit" classname="tests.M2PublicTest" time="0.002"/>
+    <testcase name="testEvacuatorTreatLogicCycle2UnitLocation" classname="tests.M2PublicTest" time="0.004"/>
+    <testcase name="testFireTruckTreat" classname="tests.M2PublicTest" time="0.002"/>
+    <testcase name="testStrikeInjury" classname="tests.M2PublicTest" time="0.001"/>
+    <testcase name="testEvacuatorTreatLogicCycle0CitizensLocations" classname="tests.M2PublicTest" time="0.005"/>
+    <testcase name="testMedicalUnitHealLogic" classname="tests.M2PublicTest" time="0.005"/>
+    <testcase name="testEvacuatorTreatLogicCycle0PassengersSize" classname="tests.M2PublicTest" time="0.005"/>
+    <testcase name="testResidentialBuildingCycleStep" classname="tests.M2PublicTest" time="0.001"/>
+    <testcase name="testCitizenBloodLossSetterKillsWhenOneHundred" classname="tests.M2PublicTest" time="0.002"/>
+    <testcase name="testGasControlUnitTreat" classname="tests.M2PublicTest" time="0.002"/>
+    <testcase name="testCitizenDisasterAfterUnitRespondFromTreatingLogic" classname="tests.M2PublicTest" time="0.005"/>
+    <testcase name="testCitizenCycleStepWithToxicityUnderThirty" classname="tests.M2PublicTest" time="0.008"/>
+    <testcase name="testUnitRespondFromTreatingLogic" classname="tests.M2PublicTest" time="0.005"/>
+    <testcase name="testEvacuatorTreatLogicCycle1UnitLocation" classname="tests.M2PublicTest" time="0.005"/>
+    <testcase name="testResidentialBuildingFoundationDamageDoesnotAffectOccupants" classname="tests.M2PublicTest" time="0.002"/>
+    <testcase name="testUnitCycleStep" classname="tests.M2PublicTest" time="0.001"/>
+    <testcase name="testConstructorSimulator" classname="tests.M2PublicTest" time="0.001"/>
+    <testcase name="testResidentialBuildingFoundationDamageSetterChangesIntegrity" classname="tests.M2PublicTest" time="0.001"/>
+    <testcase name="testCitizenCycleStepWhenHealthy" classname="tests.M2PublicTest" time="0.001"/>
+    <testcase name="testEvacuatorTreatLogicCycle0UnitLocation" classname="tests.M2PublicTest" time="0.004"/>
+    <testcase name="testCitizenStruckByNotifiesListener" classname="tests.M2PublicTest" time="0.005"/>
+    <testcase name="testEvacuatorTreatLogicCycle4OccupantsSize" classname="tests.M2PublicTest" time="0.004"/>
+    <testcase name="testCycleStepGasLeak" classname="tests.M2PublicTest" time="0.002"/>
+    <testcase name="testCitizenBloodLossSetterDoesNotDamageHP" classname="tests.M2PublicTest" time="0.001"/>
+    <testcase name="testUnitJobsDone" classname="tests.M2PublicTest" time="0.002"/>
+    <testcase name="testEvacuatorTreatLogicCycle8UnitState" classname="tests.M2PublicTest" time="0.004"/>
+    <testcase name="testInstanceVariableEmergencyUnitsGetterAndSetter" classname="tests.M2PublicTest" time="0.003"/>
+    <testcase name="testInstanceVariableUnitDistanceToTarget" classname="tests.M2PublicTest" time="0.001"/>
+    <testcase name="testCitizenCycleStepWithToxicityBetweenThirtyAndSeventy" classname="tests.M2PublicTest" time="0.009"/>
+    <testcase name="testAmbulanceTreatLogic" classname="tests.M2PublicTest" time="0.005"/>
+    <testcase name="testCitizenCycleStepWithToxicityBetweenSeventyAndHundred" classname="tests.M2PublicTest" time="0.005"/>
+    <testcase name="testUnitCycleStepRespondingAndArrivedLogic" classname="tests.M2PublicTest" time="0.054">
+      <failure>java.lang.AssertionError: Once the unit arrives to the target location its location should be updated.&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:41)&#13;
+	at tests.M2PublicTest.testUnitCycleStepRespondingAndArrivedLogic(M2PublicTest.java:1162)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:483)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testEvacuatorTreatLogicCycle8DistanceToTarget" classname="tests.M2PublicTest" time="0.006"/>
+    <testcase name="testCitizenInstanceVariableEmergencyService" classname="tests.M2PublicTest" time="0.001"/>
+    <testcase name="testSimulatorInitializeUnitListener" classname="tests.M2PublicTest" time="0.005"/>
+    <testcase name="testInstanceVariableSimulatorEmergencyService" classname="tests.M2PublicTest" time="0.001"/>
+    <testcase name="testEvacuatorTreatLogicCycle2OccupantsSize" classname="tests.M2PublicTest" time="0.004"/>
+    <testcase name="testEvacuatorTreatLogicCycle1PassengersSize" classname="tests.M2PublicTest" time="0.004"/>
+    <testcase name="testConstructorFireUnit" classname="tests.M2PublicTest" time="0.002"/>
+    <testcase name="testResidentialBuildingStructuralIntegritySetterLowerBound" classname="tests.M2PublicTest" time="0.001"/>
+    <testcase name="testCitizenHPSetterBounds" classname="tests.M2PublicTest" time="0.001"/>
+    <testcase name="testEvacuatorTreatLogicCycle4UnitState" classname="tests.M2PublicTest" time="0.009"/>
+    <testcase name="testConstructorPoliceUnit" classname="tests.M2PublicTest" time="0.002"/>
+    <testcase name="testCitizenStruckBySetsDisasterCorrectly" classname="tests.M2PublicTest" time="0.005"/>
+    <testcase name="testUnitRespondFromRespondingLogic" classname="tests.M2PublicTest" time="0.002"/>
+    <testcase name="testResidentialBuildingEmergencyServiceSetterLogic" classname="tests.M2PublicTest" time="0.005"/>
+    <testcase name="testUnitTreat" classname="tests.M2PublicTest" time="0.001"/>
+    <testcase name="testEvacuatorTreatLogicCycle1OccupantsSize" classname="tests.M2PublicTest" time="0.004"/>
+    <testcase name="testEvacuatorTreatLogicCycle2UnitState" classname="tests.M2PublicTest" time="0.005"/>
+    <testcase name="testUnitCallsTreat" classname="tests.M2PublicTest" time="0.005"/>
+    <testcase name="testResidentialBuildingFireDamageSetterLowerBound" classname="tests.M2PublicTest" time="0.002"/>
+    <testcase name="testEvacuatorTreatLogicCycle2CitizensLocations" classname="tests.M2PublicTest" time="0.005"/>
+    <testcase name="testEvacuatorTreatLogicCycle1UnitState" classname="tests.M2PublicTest" time="0.005"/>
+    <testcase name="testCycleStepInfection" classname="tests.M2PublicTest" time="0.002"/>
+    <testcase name="testUnitCycleStepRespondingLogic" classname="tests.M2PublicTest" time="0.005"/>
+    <testcase name="testEvacuatorTreatLogicCycle8UnitLocation" classname="tests.M2PublicTest" time="0.003"/>
+    <testcase name="testEvacuatorTreatLogicCycle0UnitState" classname="tests.M2PublicTest" time="0.003"/>
+    <testcase name="testResidentialBuildingStruckBy" classname="tests.M2PublicTest" time="0.001"/>
+    <testcase name="testEvacuatorTreatLogicCycle0OccupantsSize" classname="tests.M2PublicTest" time="0.004"/>
+    <testcase name="testConstructorAmbulanceUnit" classname="tests.M2PublicTest" time="0.002"/>
+    <testcase name="testInstanceVariableUnitDistanceToTargetGetterAndSetter" classname="tests.M2PublicTest" time="0.001"/>
+    <testcase name="testInstanceVariableUnitListener" classname="tests.M2PublicTest" time="0.003"/>
+    <testcase name="testResidentialBuildingStructuralIntegrityLessOrEqualZeroKillsAllOccupants" classname="tests.M2PublicTest" time="0.001"/>
+    <testcase name="testResidentialBuildingCycleStep1" classname="tests.M2PublicTest" time="0.002"/>
+    <testcase name="testResidentialBuildingCycleStep6" classname="tests.M2PublicTest" time="0.003"/>
+    <testcase name="testConstructorMedicalUnit" classname="tests.M2PublicTest" time="0.001"/>
+    <testcase name="testCitizenBloodLossSetterBounds" classname="tests.M2PublicTest" time="0.001"/>
+    <testcase name="testEvacuatorTreatLogicCycle2PassengersSize" classname="tests.M2PublicTest" time="0.004"/>
+    <testcase name="testInstanceVariableEmergencyServiceGetterAndSetter" classname="tests.M2PublicTest" time="0.002"/>
+    <testcase name="testSimulatorInitializeBuildingListener" classname="tests.M2PublicTest" time="0.005"/>
+    <testcase name="testCompoundDisaster0" classname="tests.M2PublicTest" time="0.005"/>
+    <testcase name="testCompoundDisaster1" classname="tests.M2PublicTest" time="0.005"/>
+    <testcase name="testCompoundDisaster2" classname="tests.M2PublicTest" time="0.004"/>
+    <testcase name="testResidentialBuildingFireDamageDoesnotAffectOccupants" classname="tests.M2PublicTest" time="0.002"/>
+    <testcase name="testUnitJobsDoneLogic" classname="tests.M2PublicTest" time="0.004"/>
+    <testcase name="testInstanceVariableUnitWorldListenerSetterLogic" classname="tests.M2PublicTest" time="0.004"/>
+    <testcase name="testCitizenHPSetterUpdatesStateOnDeath" classname="tests.M2PublicTest" time="0.001"/>
+    <testcase name="testInstanceVariableUnitWorldListenerGetterLogic" classname="tests.M2PublicTest" time="0.004"/>
+    <testcase name="testFireTruckTreatLogic" classname="tests.M2PublicTest" time="0.004"/>
+    <testcase name="testCitizenInstanceVariableEmergencyServiceGetterAndSetter" classname="tests.M2PublicTest" time="0.004"/>
+    <testcase name="testGameOverCase1" classname="tests.M2PublicTest" time="0.006"/>
+    <testcase name="testGameOverCase2" classname="tests.M2PublicTest" time="0.003"/>
+    <testcase name="testGameOverCase3" classname="tests.M2PublicTest" time="0.003"/>
+    <testcase name="testEvacuatorTreatLogicCycle0DistanceToTarget" classname="tests.M2PublicTest" time="0.004"/>
+    <testcase name="testUnitRespond" classname="tests.M2PublicTest" time="0.002"/>
+    <testcase name="testEvacuatorTreatLogicCycle8PassengersSize" classname="tests.M2PublicTest" time="0.004"/>
+    <testcase name="testCurrentCycleLogic" classname="tests.M2PublicTest" time="0.007"/>
+    <testcase name="testStrikeDisaster" classname="tests.M2PublicTest" time="0.005"/>
+    <testcase name="testResidentialBuildingFireDamageSetterUpperBound" classname="tests.M2PublicTest" time="0.001"/>
+    <testcase name="testEvacuatorTreatLogicCycle1CitizensLocation" classname="tests.M2PublicTest" time="0.004"/>
+    <testcase name="testInstanceVariableUnitDistanceToTargetSetterLogic" classname="tests.M2PublicTest" time="0.001"/>
+    <testcase name="testStrikeFire" classname="tests.M2PublicTest" time="0.001"/>
+    <testcase name="testResidentialBuildingFoundationDamageSetterUpperBound" classname="tests.M2PublicTest" time="0.001"/>
+    <testcase name="testResidentialBuildingStruckByNotifiesListener" classname="tests.M2PublicTest" time="0.004"/>
+    <testcase name="testCalculateCasualtiesLogic" classname="tests.M2PublicTest" time="0.004"/>
+    <testcase name="testInstanceVariableResidentialBuildingEmergencyServiceGetterAndSetter" classname="tests.M2PublicTest" time="0.002"/>
+    <testcase name="testResidentialBuildingStruckBySetsDisasterCorrectly" classname="tests.M2PublicTest" time="0.004"/>
+    <testcase name="testCycleStepCollapse" classname="tests.M2PublicTest" time="0.004"/>
+  </testsuite>
+</testrun>

@@ -79,7 +79,6 @@ public abstract class Unit implements Simulatable, SOSResponder {
 		if(this.distanceToTarget==0){
 			this.state = UnitState.TREATING ;
 			this.treat();
-			
 		}	
 		
 		if(this.state == UnitState.RESPONDING){

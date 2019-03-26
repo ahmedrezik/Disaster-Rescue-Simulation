@@ -50,7 +50,7 @@ public abstract class PoliceUnit extends Unit {
 				    	this.passengers.remove(0);
 				    }
 			}
-			this.distanceToBase=this.distanceToBase-this.getStepsPerCycle();
+			this.setDistanceToBase(distanceToBase-this.getStepsPerCycle());
 		}
 			}
 	public void treat(){

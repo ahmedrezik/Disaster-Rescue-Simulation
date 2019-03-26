@@ -40,9 +40,6 @@ public abstract class Unit implements Simulatable, SOSResponder {
 	}
 
 	public void setLocation(Address location) {
-		if (this.distanceToTarget == 0){
-			this.location = this.target.getLocation();
-		}
 		this.location = location;
 	}
 
@@ -79,7 +76,6 @@ public abstract class Unit implements Simulatable, SOSResponder {
 		if(this.distanceToTarget==0){
 			this.state = UnitState.TREATING ;
 			this.treat();
-			
 		}	
 		
 		if(this.state == UnitState.RESPONDING){

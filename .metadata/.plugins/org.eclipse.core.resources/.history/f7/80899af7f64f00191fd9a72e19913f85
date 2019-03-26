@@ -44,7 +44,7 @@ public abstract class PoliceUnit extends Unit {
 		if(passengers.size()==0){
 			super.cycleStep();
 		}else{
-			if(this.distanceToBase==0){
+			if(this.distanceToBase-this.getStepsPerCycle()==0){
 				 while(!this.passengers.isEmpty()){
 				    	this.passengers.get(0).setState(CitizenState.RESCUED);
 				    	this.passengers.remove(0);

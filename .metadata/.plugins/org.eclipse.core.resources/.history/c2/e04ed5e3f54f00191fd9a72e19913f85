@@ -40,9 +40,6 @@ public abstract class Unit implements Simulatable, SOSResponder {
 	}
 
 	public void setLocation(Address location) {
-		if (this.distanceToTarget == 0){
-			this.location = this.target.getLocation();
-		}
 		this.location = location;
 	}
 
@@ -79,7 +76,6 @@ public abstract class Unit implements Simulatable, SOSResponder {
 		if(this.distanceToTarget==0){
 			this.state = UnitState.TREATING ;
 			this.treat();
-			
 		}	
 		
 		if(this.state == UnitState.RESPONDING){
@@ -113,10 +109,10 @@ public abstract class Unit implements Simulatable, SOSResponder {
 	   else {if(this.state==UnitState.RESPONDING || this.state==UnitState.TREATING){
 	    	this.target.getDisaster().setActive(true);
 	    }}
-		this.target=r;
-		this.state=UnitState.RESPONDING;
-		this.setDistanceToTarget(getManhattanDistance(this.getLocation(),this.target.getLocation()));
-	    
+//		this.target=r;
+//		this.state=UnitState.RESPONDING;
+//		this.setDistanceToTarget(getManhattanDistance(this.getLocation(),this.target.getLocation()));
+//	    
 	}
 	public int getManhattanDistance(Address x,Address y){
 		return Math.abs(x.getX()-y.getX())+Math.abs(x.getY()-y.getY());
