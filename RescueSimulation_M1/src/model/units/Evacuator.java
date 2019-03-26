@@ -7,7 +7,7 @@ public class Evacuator extends PoliceUnit {
 
 	public Evacuator(String unitID, Address location, int stepsPerCycle, WorldListener w,int maxCapacity) {
 
-		super(unitID, location, stepsPerCycle,maxCapacity, w);
+		super(unitID, location, stepsPerCycle,w,maxCapacity);
 
 	}
 

@@ -58,7 +58,7 @@ public abstract class Unit implements Simulatable, SOSResponder {
 		if( distanceToTarget <= 0){
 			this.distanceToTarget = 0 ;
 			worldListener.assignAddress(this, this.target.getLocation().getX(), this.target.getLocation().getY());
-		   this.state = UnitState.TREATING ;
+		   
 		}
 		
 		else
@@ -73,17 +73,24 @@ public abstract class Unit implements Simulatable, SOSResponder {
 		return worldListener;
 	}
 	public  void cycleStep(){
-			if(this.state == UnitState.RESPONDING){
+		if(this.distanceToTarget==0){
+			this.state = UnitState.TREATING ;
+			this.treat();
+		}	
+		
+		if(this.state == UnitState.RESPONDING){
 				int x = this.distanceToTarget - this.stepsPerCycle ;
 				this.setDistanceToTarget(x);
+				if(this instanceof PoliceUnit)
+					((PoliceUnit)this).setDistanceToBase(((PoliceUnit)this).getDistanceToBase()-this.stepsPerCycle);
+				
 				}
-			if(this.state == UnitState.TREATING){
-				this.treat();
-			}
+			
 
 		
 	}
 	public void treat(){
+		if(this.target!=null)
 		this.target.getDisaster().setActive(false);
 	}
 	public void jobsDone(){
