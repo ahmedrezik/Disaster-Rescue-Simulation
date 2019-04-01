@@ -1,8 +1,6 @@
 package model.units;
-
 import model.events.WorldListener;
-import model.people.Citizen;
-import model.people.CitizenState;
+import model.people.*;
 import simulation.Address;
 
 public class Ambulance extends MedicalUnit {
@@ -17,10 +15,9 @@ public class Ambulance extends MedicalUnit {
 		((Citizen)this.getTarget()).setBloodLoss(((Citizen)this.getTarget()).getBloodLoss()-this.getTreatmentAmount());
 		if ( ((Citizen)this.getTarget()).getBloodLoss() == 100)
 			 this.jobsDone();
-		if(((Citizen)this.getTarget()).getBloodLoss()==0 ){
+		else if(((Citizen)this.getTarget()).getBloodLoss()==0 ){
 			((Citizen)this.getTarget()).setState(CitizenState.RESCUED);
 			this.heal();}
 		
 	}
-
 }

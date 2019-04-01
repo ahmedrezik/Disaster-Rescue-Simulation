@@ -1,15 +1,14 @@
 package controller;
 
 import java.util.ArrayList;
-import model.events.*;
 
+import model.events.SOSListener;
 import model.infrastructure.ResidentialBuilding;
 import model.people.Citizen;
 import model.units.Unit;
-import simulation.Rescuable;
 import simulation.Simulator;
-
-public class CommandCenter implements SOSListener{
+import simulation.Rescuable;
+public class CommandCenter implements SOSListener {
 
 	private Simulator engine;
 	private ArrayList<ResidentialBuilding> visibleBuildings;
@@ -18,11 +17,11 @@ public class CommandCenter implements SOSListener{
 
 	public CommandCenter() throws Exception {
 
-		engine = new Simulator(null);
+		engine = new Simulator(this);
 		visibleBuildings = new ArrayList<ResidentialBuilding>();
 		visibleCitizens = new ArrayList<Citizen>();
 		emergencyUnits = new ArrayList<Unit>();
-		engine.setEmergencyService(this);
+
 	}
 	public void receiveSOSCall(Rescuable r){
 		 if(r instanceof Citizen)

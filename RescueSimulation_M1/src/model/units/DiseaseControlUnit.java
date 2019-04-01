@@ -1,10 +1,8 @@
 package model.units;
 
 import model.events.WorldListener;
-import model.people.Citizen;
-import model.people.CitizenState;
 import simulation.Address;
-
+import model.people.*;
 public class DiseaseControlUnit extends MedicalUnit {
 
 	public DiseaseControlUnit(String unitID, Address location, int stepsPerCycle,WorldListener w) {
@@ -23,4 +21,5 @@ public class DiseaseControlUnit extends MedicalUnit {
 		((Citizen)this.getTarget()).setToxicity(((Citizen)this.getTarget()).getToxicity()-this.getTreatmentAmount());
 		
 	}
+
 }

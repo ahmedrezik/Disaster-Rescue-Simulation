@@ -1,9 +1,8 @@
 package model.units;
-
-import model.events.WorldListener;
-import model.infrastructure.ResidentialBuilding;
+import model.events.*;
+import model.infrastructure.*;
 import simulation.Address;
-
+import model.events.*;
 public class GasControlUnit extends FireUnit {
 
 	public GasControlUnit(String unitID, Address location, int stepsPerCycle,WorldListener w) {
@@ -22,5 +21,4 @@ public class GasControlUnit extends FireUnit {
 		 
 		
 	}
-
 }

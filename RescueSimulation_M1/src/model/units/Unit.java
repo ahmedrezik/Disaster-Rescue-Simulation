@@ -1,12 +1,11 @@
 package model.units;
-import java.util.*;
-
+import model.people.*;
+import model.events.SOSResponder;
 import model.events.WorldListener;
 import simulation.Address;
 import simulation.Rescuable;
 import simulation.Simulatable;
-import model.events.*;
-import model.people.Citizen;
+
 public abstract class Unit implements Simulatable, SOSResponder {
 
 	private String unitID;
@@ -40,9 +39,6 @@ public abstract class Unit implements Simulatable, SOSResponder {
 	}
 
 	public void setLocation(Address location) {
-		if (this.distanceToTarget == 0){
-			this.location = this.target.getLocation();
-		}
 		this.location = location;
 	}
 
@@ -61,10 +57,10 @@ public abstract class Unit implements Simulatable, SOSResponder {
 		if( distanceToTarget <= 0){
 			this.distanceToTarget = 0 ;
 			worldListener.assignAddress(this, this.target.getLocation().getX(), this.target.getLocation().getY());
-		   
-		}
-		
-		else
+			if(this instanceof PoliceUnit) {
+				((PoliceUnit)this).setDistanceToBase(this.getManhattanDistance( this.getLocation(), new Address(0,0)));
+			}
+		}	else
 		this.distanceToTarget = distanceToTarget;
 	}
 
@@ -75,31 +71,69 @@ public abstract class Unit implements Simulatable, SOSResponder {
 	public WorldListener getWorldListener() {
 		return worldListener;
 	}
-	public  void cycleStep(){
-		if(this.distanceToTarget==0){
-			this.state = UnitState.TREATING ;
-			this.treat();
-			
-		}	
-		
-		if(this.state == UnitState.RESPONDING){
-				int x = this.distanceToTarget - this.stepsPerCycle ;
-				this.setDistanceToTarget(x);
-				if(this instanceof PoliceUnit)
-					((PoliceUnit)this).setDistanceToBase(((PoliceUnit)this).getDistanceToBase()-this.stepsPerCycle);
-				
+//public  void cycleStep(){
+	//if(this.distanceToTarget==0){
+			//this.state=UnitState.TREATING;
+			//this.treat();
+		//}	
+		//else if(this.state == UnitState.RESPONDING){
+				//int x = this.distanceToTarget - this.stepsPerCycle ;
+				//this.setDistanceToTarget(x);
+				//if(this instanceof PoliceUnit)
+					//((PoliceUnit)this).setDistanceToBase(((PoliceUnit)this).getDistanceToBase()+this.stepsPerCycle);
+				//}
+		//}
+	public void cycleStep(){
+		 if(this instanceof PoliceUnit) {
+			 if(((PoliceUnit)this).getDistanceToBase()==0 && this.state==UnitState.TREATING) {
+				this.treat();
 				}
+			 if(((PoliceUnit)this).getPassengers().size()!=0) {
+				if(((PoliceUnit)this).getDistanceToBase()-this.stepsPerCycle<0) {
+					int x=this.stepsPerCycle+((PoliceUnit)this).getDistanceToBase()-this.stepsPerCycle;
+					this.setDistanceToTarget(this.distanceToTarget+x);
+				}else
+				this.setDistanceToTarget(this.distanceToTarget+this.stepsPerCycle);
+				((PoliceUnit)this).setDistanceToBase(((PoliceUnit)this).getDistanceToBase()-this.stepsPerCycle);
+			}
+			else {
+				if(this.distanceToTarget==0 && this.state==UnitState.IDLE) {
+					((PoliceUnit)this).setDistanceToBase(((PoliceUnit)this).getDistanceToBase()-this.stepsPerCycle);
+				}
+				else if(this.distanceToTarget==0){
+					this.state=UnitState.TREATING;
+					this.treat();
+				}
+				else this.setDistanceToTarget(this.distanceToTarget-this.stepsPerCycle);
+				
+		}
+		}else if(this.distanceToTarget==0 && this.state!=UnitState.IDLE){
+				this.state=UnitState.TREATING;
+				this.treat();
 			
-
-		
+		} 
+		else if(this.state==UnitState.RESPONDING) {
+			this.setDistanceToTarget(distanceToTarget-this.stepsPerCycle);
+		}
 	}
+	
+	//public  void cycleStep(){
+		//if(this.state == UnitState.RESPONDING){
+			//int x = this.distanceToTarget - this.stepsPerCycle ;
+			//this.setDistanceToTarget(x);
+			//}
+		//if(this.state == UnitState.TREATING){
+		//	this.treat();
+	//	}
+
+	
+//}
 	public void treat(){
-		if(this.target!=null)
 		this.target.getDisaster().setActive(false);
 	}
 	public void jobsDone(){
-		this.target=null;
 		this.setState(UnitState.IDLE);
+		this.target=null;
 	}
 	public void respond(Rescuable r){
 	   if(this instanceof MedicalUnit){

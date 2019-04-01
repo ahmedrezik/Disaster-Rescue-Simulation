@@ -1,6 +1,5 @@
 package model.disasters;
 
-import model.infrastructure.ResidentialBuilding;
 import model.people.Citizen;
 
 public class Infection extends Disaster {

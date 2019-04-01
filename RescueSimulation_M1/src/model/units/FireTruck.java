@@ -1,9 +1,8 @@
 package model.units;
 
-import model.events.WorldListener;
-import model.infrastructure.ResidentialBuilding;
 import simulation.Address;
-
+import model.events.WorldListener;
+import model.infrastructure.*;
 public class FireTruck extends FireUnit {
 
 	public FireTruck(String unitID, Address location, int stepsPerCycle,WorldListener w) {

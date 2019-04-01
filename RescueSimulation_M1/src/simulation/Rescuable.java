@@ -1,11 +1,8 @@
 package simulation;
-import model.disasters.Disaster;
+import model.disasters.*;
 public interface Rescuable {
-	//willContainTheMethodsAvailableForAllRescuableObjects
-	
-	
-	
-		public void struckBy(Disaster d);
-		public Address getLocation();
-		public Disaster getDisaster();
+
+	public void struckBy(Disaster d);
+	public Address getLocation();
+	public Disaster getDisaster();
 }

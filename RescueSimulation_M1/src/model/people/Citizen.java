@@ -21,7 +21,7 @@ public class Citizen implements Rescuable, Simulatable {
 	private SOSListener emergencyService;
 	private WorldListener worldListener;
 
-	public Citizen(Address location, String nationalID, String name,int age,WorldListener worldlistener) {
+	public Citizen(Address location, String nationalID, String name, int age,WorldListener worldlistener) {
 
 		this.name = name;
 		this.nationalID = nationalID;
@@ -41,37 +41,13 @@ public class Citizen implements Rescuable, Simulatable {
 		this.state = state;
 	}
 
-	public Disaster getDisaster() {
-		return disaster;
-	}
-
-	
-
-	public Address getLocation() {
-		return location;
-	}
-
-	public void setLocation(Address location) {
-		this.location = location;
-	}
-
-	public String getNationalID() {
-		return nationalID;
-	}
-
-	
-
 	public String getName() {
 		return name;
 	}
 
-	
-
 	public int getAge() {
 		return age;
 	}
-
-	
 
 	public int getHp() {
 		return hp;
@@ -101,8 +77,6 @@ public class Citizen implements Rescuable, Simulatable {
 		this.bloodLoss = bloodLoss;
 	}
 
-	
-
 	public int getToxicity() {
 		return toxicity;
 	}
@@ -117,6 +91,21 @@ public class Citizen implements Rescuable, Simulatable {
 	}
 
 
+	public Address getLocation() {
+		return location;
+	}
+
+	public void setLocation(Address location) {
+		this.location = location;
+	}
+
+	public Disaster getDisaster() {
+		return disaster;
+	}
+
+	public String getNationalID() {
+		return nationalID;
+	}
 	public void setEmergencyService(SOSListener emergencyService) {
 		this.emergencyService = emergencyService;
 	}
@@ -151,4 +140,5 @@ public class Citizen implements Rescuable, Simulatable {
 		this.emergencyService.receiveSOSCall(this);
 		
 	}
+
 }

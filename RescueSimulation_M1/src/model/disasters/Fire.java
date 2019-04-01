@@ -10,11 +10,11 @@ public class Fire extends Disaster {
 
 	}
 	public void strike(){ 
-		this.setActive(true);
+		super.strike();
 		int x = ((ResidentialBuilding)getTarget()).getFireDamage();
 		((ResidentialBuilding)getTarget()).setFireDamage(x+10);
 		//((ResidentialBuilding)getTarget()).struckBy(this);
-		super.strike();
+		
 		
 		
 		}
@@ -31,5 +31,4 @@ public class Fire extends Disaster {
 		
 			
 	}
-
 }

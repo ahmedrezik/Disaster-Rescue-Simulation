@@ -1,9 +1,7 @@
 package model.units;
-
-import model.people.Citizen;
+import model.people.*;
+import model.events.WorldListener;
 import simulation.Address;
-import simulation.Rescuable;
-import model.events.*;
 
 public abstract class MedicalUnit extends Unit {
 
@@ -21,8 +19,8 @@ public abstract class MedicalUnit extends Unit {
 		return treatmentAmount;
 	}
    public void heal(){
-	       ((Citizen)this.getTarget()).setHp(((Citizen)this.getTarget()).getHp()+this.healingAmount);
-	       if(((Citizen)this.getTarget()).getHp()==100)
-			   this.jobsDone();
+	    ((Citizen)this.getTarget()).setHp(((Citizen)this.getTarget()).getHp()+this.healingAmount);
+	    if(((Citizen)this.getTarget()).getHp()==100)
+			   this.jobsDone();   
 }
- }
+}
