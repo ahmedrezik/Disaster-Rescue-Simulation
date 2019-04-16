@@ -1,0 +1,160 @@
+package view;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.GridLayout;
+import java.awt.LayoutManager;
+import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.*;
+import simulation.Simulator;
+import javax.swing.*;
+import javax.swing.border.Border;
+
+
+public class GameDisplay extends JFrame implements ActionListener {
+	private JPanel map;
+	private JPanel info;
+	private JPanel units;
+	private JLabel label;
+	private JPanel sidePane; 
+	private JTextArea txtArea;
+	private JButton b;
+	private JButton c;
+	private JButton d;
+	private JButton back;
+	
+//ImageIcon btimg = new ImageIcon("Resources/Unknown.jpeg");
+	
+	public void AddButtons() {
+		for(int i =0; i < 10; i++) {
+			for(int j=0; j< 10; j++) {
+				JButton button = new JButton();
+				button.setText("("+i+ " ," + j +")");
+				//button.setIcon(btimg);
+		//		button.setLayout(new GridLayout());
+				//button.setSize(100, 100);
+
+this.map.setLayout(new GridLayout(10,10));
+		// add it in the center of the JFrame
+this.map.add(button, new FlowLayout());
+				
+				
+			}
+		}
+	}
+public GameDisplay() {
+this.setSize(Toolkit.getDefaultToolkit().getScreenSize());
+//Exit operation
+this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+
+this.map = new JPanel();
+//this.map.setPreferredSize(new Dimension(this.WIDTH-600, this.HEIGHT-800));
+this.getContentPane().add(this.map,BorderLayout.CENTER);
+
+//this.map.setSize(d);
+
+//this.map.setBounds(0, 0, this.getWidth(), this.getHeight() -250);
+this.map.setBackground(Color.BLACK);
+
+this.info = new JPanel();
+this.add(this.info,BorderLayout.SOUTH);
+this.info.setBounds(0, this.getHeight()-this.map.getHeight(), this.getWidth(), this.getHeight() );
+AddButtons();
+this.info.setBackground(Color.RED);
+
+JButton NextCycle = new JButton();
+
+this.label = new JLabel();
+// TODO: fadel elnumber
+this.label.setText("Number Of Casualties");
+//this.label.setVisible(true);
+this.info.add(this.label,BorderLayout.EAST);
+this.info.add(NextCycle);
+
+NextCycle.setText("NextCycle");
+
+	this.sidePane = new JPanel();
+	//this.sidePane.setSize(new Dimension(900,200));
+	
+
+	this.sidePane.setBackground(Color.orange);
+	this.getContentPane().add(this.sidePane, BorderLayout.EAST);
+	this.sidePane.setLayout(new GridLayout(3,1));
+	b = new JButton("Salma Khateeb");
+	b.addActionListener(this);
+	this.sidePane.add(b);
+    c=new JButton("Ahmed");
+	this.sidePane.add(c);
+    d=new JButton("Maya Ahmed");
+	this.sidePane.add(d);
+	this.sidePane.setSize(80,90);
+	//this.sidePane.setBounds(0, 0, 90, this.HEIGHT);
+	back=new JButton("Back");
+	back.setSize(new Dimension(50,50));
+	back.addActionListener(this);
+	this.txtArea = new JTextArea();
+	this.txtArea.setFont(new Font(Font.SERIF, Font.PLAIN,  100));
+	this.txtArea.setEditable(false);
+	this.txtArea.setVisible(false);
+	this.txtArea.setText("okay");
+	
+	//this.txtArea.setName();
+	this.txtArea.setLocation(this.getWidth(), 0 );
+	//Timer timer = new Timer(500, Actione );
+	
+	
+}
+
+	
+
+
+
+
+
+
+
+
+	public static void main(String [] args) {
+	GameDisplay game = new GameDisplay();
+	game.setVisible(true);
+	}
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if(e.getSource() == b) {
+			this.sidePane.remove(b);
+			this.sidePane.remove(c);
+			this.sidePane.remove(d);
+			this.sidePane.add(back);
+            this.sidePane.add(this.txtArea);
+		this.txtArea.setVisible(true);
+            }
+		if(e.getSource()==back) {
+			this.txtArea.setVisible(false);
+			this.sidePane.remove(this.txtArea);
+			this.sidePane.add(b);
+			this.sidePane.add(c);
+			this.sidePane.add(d);
+			this.sidePane.remove(back);
+		}
+		if(e.getSource() == d) {
+			this.sidePane.remove(b);
+			this.sidePane.remove(c);
+			this.sidePane.remove(d);
+			this.sidePane.add(back);
+            this.sidePane.add(this.txtArea);
+		this.txtArea.setVisible(true);
+            }
+		if(e.getSource() == c) {
+			this.sidePane.remove(b);
+			this.sidePane.remove(c);
+			this.sidePane.remove(d);
+			this.sidePane.add(back);
+            this.sidePane.add(this.txtArea);
+		this.txtArea.setVisible(true);
+            }
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;tests.M3Tests_29083.java&apos; to &apos;M3Tests.java&apos;&#x0A;- Original project: &apos;src&apos;&#x0A;- Original element: &apos;tests.M3Tests_29083.java&apos;&#x0A;- Renamed element: &apos;tests.M3Tests.java&apos;" description="Rename compilation unit &apos;M3Tests_29083.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/&lt;tests{M3Tests_29083.java" name="M3Tests.java" references="false" stamp="1554415150808" version="1.0"/>
+</session>

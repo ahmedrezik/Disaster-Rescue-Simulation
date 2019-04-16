@@ -1,0 +1,85 @@
+package controller;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import model.people.*;
+import model.events.SOSListener;
+import model.infrastructure.ResidentialBuilding;
+
+import model.units.Unit;
+import simulation.Rescuable;
+import simulation.Simulator;
+import view.GameDisplay;
+
+public class CommandCenter implements SOSListener, ActionListener {
+
+	private Simulator engine;
+	private ArrayList<ResidentialBuilding> visibleBuildings;
+	private ArrayList<Citizen> visibleCitizens;
+	private GameDisplay gameDisplay;
+	private int cycle=1;
+
+	@SuppressWarnings("unused")
+	private ArrayList<Unit> emergencyUnits;
+
+	public CommandCenter() throws Exception {
+		engine = new Simulator(this);
+		visibleBuildings = new ArrayList<ResidentialBuilding>();
+		visibleCitizens = new ArrayList<Citizen>();
+		emergencyUnits = engine.getEmergencyUnits();
+        gameDisplay = new GameDisplay();
+        for(int i=0;i<gameDisplay.getButtons().size();i++) {
+        	gameDisplay.getButtons().get(i).addActionListener(this);
+        }
+        gameDisplay.getNextCycle().addActionListener(this);
+        gameDisplay.getLabel().setText("Number of Casualties" + engine.calculateCasualties());
+        }
+
+	@Override
+	public void receiveSOSCall(Rescuable r) {
+		
+		if (r instanceof ResidentialBuilding) {
+			
+			if (!visibleBuildings.contains(r))
+				visibleBuildings.add((ResidentialBuilding) r);
+			
+		} else {
+			
+			if (!visibleCitizens.contains(r))
+				visibleCitizens.add((Citizen) r);
+		}
+
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if(e.getSource()== gameDisplay.getNextCycle()) {
+			String y="";
+			String x="";
+			String z="";
+			cycle++;
+			 gameDisplay.getLabel().setText("Number of Casualties" + engine.calculateCasualties());
+			 for(int i=0;i<this.visibleBuildings.size();i++){
+				 if(this.visibleBuildings.get(i).getDisaster().getStartCycle()==cycle) {
+					y+="Disaster "+ this.visibleBuildings.get(i).getDisaster().getName()+"\n";
+				 }
+				 if(this.visibleBuildings.get(i).getStructuralIntegrity()==0) {
+					 x+="The Building located in ("+this.visibleBuildings.get(i).getLocation().getX()+","+this.visibleBuildings.get(i).getLocation().getY()+") is destroyed ,and all the occupants are dead"+"\n";
+				 }
+			 }
+			 for(int i=0;i<this.visibleCitizens.size();i++) {
+				 if(this.visibleCitizens.get(i).getState()==CitizenState.DECEASED) {
+					 z+="The Citizen with id"+this.visibleCitizens.get(i).getNationalID()+"Located in ("+this.visibleCitizens.get(i).getLocation().getX()+","+this.visibleCitizens.get(i).getLocation().getY()+") is Dead";
+				 }
+			 }
+			 gameDisplay.getTxtArea().setText( gameDisplay.getTxtArea().getText()+"cycle"+cycle+"\n"+y+"\n"+x+"\n"+z);
+		}
+		
+	}
+	public static void main(String [] args) throws Exception {
+		CommandCenter game = new CommandCenter();
+		GameDisplay x=new GameDisplay();
+	}
+
+}

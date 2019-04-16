@@ -1,0 +1,53 @@
+package model.disasters;
+
+import model.infrastructure.ResidentialBuilding;
+import model.people.Citizen;
+import simulation.Rescuable;
+import simulation.Simulatable;
+
+public abstract class Disaster implements Simulatable{
+	private int startCycle;
+	private Rescuable target;
+	private boolean active;
+	public Disaster(int startCycle, Rescuable target) {
+		this.startCycle = startCycle;
+		this.target = target;
+	}
+	public boolean isActive() {
+		return active;
+	}
+	public void setActive(boolean active) {
+		this.active = active;
+	}
+	public int getStartCycle() {
+		return startCycle;
+	}
+	public Rescuable getTarget() {
+		return target;
+	}
+	public void strike() 
+	{
+		
+		target.struckBy(this);
+		active=true;
+	}
+	
+	public boolean canStrike(Rescuable r) {
+		if(this instanceof  Collapse || this instanceof Fire || this instanceof GasLeak) {
+			if(!(r instanceof ResidentialBuilding)) {
+				return false;
+			}
+			
+		}
+		else if(this instanceof Injury || this instanceof Infection) {
+			if(!(r instanceof Citizen)) {
+				return false;
+			}
+		}
+		
+			return true;
+		
+		
+		
+	}
+}

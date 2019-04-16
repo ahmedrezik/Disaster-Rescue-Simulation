@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="model.units.Unit"/>
+    <fullyQualifiedTypeName name="simulation.Rescuable"/>
+    <fullyQualifiedTypeName name="model.disasters.Disaster"/>
+    <fullyQualifiedTypeName name="exceptions.IncompatibleTargetException"/>
+    <fullyQualifiedTypeName name="exceptions.CannotTreatException"/>
+    <fullyQualifiedTypeName name="exceptions.UnitException"/>
+    <fullyQualifiedTypeName name="model.disasters.Collapse"/>
+    <fullyQualifiedTypeName name="model.infrastructure.ResidentialBuilding"/>
+    <fullyQualifiedTypeName name="model.people.Citizen"/>
+    <fullyQualifiedTypeName name="exceptions.BuildingAlreadyCollapsedException"/>
+    <fullyQualifiedTypeName name="exceptions.DisasterException"/>
+    <fullyQualifiedTypeName name="exceptions.CitizenAlreadyDeadException"/>
+    <fullyQualifiedTypeName name="javax.imageio.ImageIO"/>
+    <fullyQualifiedTypeName name="javax.swing.JFrame"/>
+    <fullyQualifiedTypeName name="java.awt.LayoutManager"/>
+    <fullyQualifiedTypeName name="java.awt.Color"/>
+    <fullyQualifiedTypeName name="java.awt.Dimension"/>
+    <fullyQualifiedTypeName name="simulation.Simulator"/>
+    <fullyQualifiedTypeName name="javax.swing.border.Border"/>
+    <fullyQualifiedTypeName name="java.awt.FlowLayout"/>
+    <fullyQualifiedTypeName name="java.awt.GridLayout"/>
+    <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
+    <fullyQualifiedTypeName name="view.GameDisplay"/>
+    <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+</qualifiedTypeNameHistroy>

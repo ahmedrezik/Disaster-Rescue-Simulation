@@ -1,0 +1,59 @@
+package view;
+import java.awt.*;
+import javax.swing.*;
+public class Display extends Canvas implements Runnable  {
+	
+	public static final int Width = 800;
+	public static final int height = 500;
+	public static GraphicsDevice myDevice;
+	private Thread thread;
+	private boolean running = false;
+	
+	public void start() {
+		if(running) {
+			return;
+		}
+		else {
+			running = true;
+			thread = new Thread(this);
+			thread.start();
+		}
+	}
+	
+	private void stop() {
+		if(!running) {
+			return;
+		}
+		else {
+			running = false;
+			try {
+			thread.join();}
+			catch(Exception e) {
+				System.exit(0);
+			}
+		}
+	}
+	public static void main(String [] args) {
+		Display game = new Display();
+		JFrame frame = new JFrame();
+		
+		frame.add(game);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setSize(Toolkit.getDefaultToolkit().getScreenSize());
+	//	frame.setUndecorated(true);
+	//myDevice.setFullScreenWindow(frame);
+		frame.setLocationRelativeTo(null);
+		frame.setTitle("Welcome to the Shit");
+		frame.setResizable(false);
+		frame.setVisible(true);
+		game.start();
+	}
+	@Override
+	public void run() {
+		
+		while(running) {
+			
+		}
+	}
+
+}
