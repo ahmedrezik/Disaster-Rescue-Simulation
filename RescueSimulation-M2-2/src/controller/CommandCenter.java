@@ -25,6 +25,7 @@ public class CommandCenter implements SOSListener, ActionListener {
 
 	public CommandCenter() throws Exception {
 		engine = new Simulator(this);
+		
 		visibleBuildings = new ArrayList<ResidentialBuilding>();
 		visibleCitizens = new ArrayList<Citizen>();
 		emergencyUnits = engine.getEmergencyUnits();
@@ -78,7 +79,7 @@ public class CommandCenter implements SOSListener, ActionListener {
 		
 	}
 	public static void main(String [] args) throws Exception {
-				GameDisplay x=new GameDisplay();
+				CommandCenter game = new CommandCenter();
 	}
 
 }

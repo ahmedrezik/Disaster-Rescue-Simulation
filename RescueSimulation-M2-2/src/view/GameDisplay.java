@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.awt.*;
 import simulation.Simulator;
 import javax.swing.*;
-import javax.swing.border.Border;
+
 
 
 public class GameDisplay extends JFrame implements ActionListener {

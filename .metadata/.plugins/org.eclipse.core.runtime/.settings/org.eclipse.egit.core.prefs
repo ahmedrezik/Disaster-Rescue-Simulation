@@ -1,2 +1,10 @@
+<<<<<<< HEAD
+GitRepositoriesView.GitDirectories=/Users/ahmed/Desktop/CS4Game/\\Users\\Salma-PC\\Desktop\\CS4Game\\.git;\:/Users/ahmed/Desktop/CS4Game/C\:/Users/ahmed/Desktop/CS4Game/.git\:
+GitRepositoriesView.GitDirectories.relative=\\Users\\Salma-PC\\Desktop\\CS4Game\\.git;\:C\:.git\:
+||||||| merged common ancestors
 GitRepositoriesView.GitDirectories=C\:\\Users\\Salma-PC\\Desktop\\CS4Game\\.git;
+=======
+GitRepositoriesView.GitDirectories=C\:\\Users\\Lenovo\\Desktop\\CS4Game\\.git;C\:\\Users\\Salma-PC\\Desktop\\CS4Game\\.git;
+GitRepositoriesView.GitDirectories.relative=.git;C\:\\Users\\Salma-PC\\Desktop\\CS4Game\\.git;
+>>>>>>> 5e2dc0c72c24ddb56eecfe9b7911d0410f156363
 eclipse.preferences.version=1

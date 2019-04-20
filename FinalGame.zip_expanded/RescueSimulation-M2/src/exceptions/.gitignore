@@ -1,0 +1,7 @@
+/BuildingAlreadyCollapsedException.class
+/CannotTreatException.class
+/CitizenAlreadyDeadException.class
+/DisasterException.class
+/IncompatibleTargetException.class
+/SimulationException.class
+/UnitException.class

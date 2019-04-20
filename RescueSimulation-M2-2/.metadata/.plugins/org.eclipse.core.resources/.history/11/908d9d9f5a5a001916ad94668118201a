@@ -1,8 +1,0 @@
-package view;
-import java.awt.*;
-import java.swing.
-public class Display extends Canvas  {
-	
-	
-
-}

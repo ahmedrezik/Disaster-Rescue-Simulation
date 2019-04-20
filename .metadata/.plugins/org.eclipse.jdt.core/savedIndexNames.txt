@@ -1,23 +1,3 @@
-INDEX VERSION 1.127+C:\Users\Salma-PC\Desktop\CS4Game\.metadata\.plugins\org.eclipse.jdt.core
-1581348312.index
-2452825209.index
-1693350962.index
-3236066361.index
-3696013305.index
-552918413.index
-7361639.index
-1828334100.index
-69094452.index
-1563176162.index
-4050587517.index
-14782727.index
-2829002480.index
-3747929674.index
-3003931757.index
-1009856990.index
-2787264012.index
-4021622831.index
-1844642007.index
-1374756069.index
-3845049581.index
-1503324754.index
+INDEX VERSION 1.130+/Users/ahmed/Desktop/CS4Game/.metadata/.plugins/org.eclipse.jdt.core
+953218622.index
+1009049359.index

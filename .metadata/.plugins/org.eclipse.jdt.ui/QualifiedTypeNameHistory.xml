@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.EventListener"/>
-<fullyQualifiedTypeName name="model.events.WorldListener"/>
-<fullyQualifiedTypeName name="model.events.SOSListener"/>
-<fullyQualifiedTypeName name="simulation.Rescuable"/>
+    <fullyQualifiedTypeName name="java.util.EventListener"/>
+    <fullyQualifiedTypeName name="model.events.WorldListener"/>
+    <fullyQualifiedTypeName name="model.events.SOSListener"/>
+    <fullyQualifiedTypeName name="simulation.Rescuable"/>
+    <fullyQualifiedTypeName name="javax.swing.JWindow"/>
+    <fullyQualifiedTypeName name="javax.swing.border.EtchedBorder"/>
+    <fullyQualifiedTypeName name="javax.swing.ImageIcon"/>
+    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
+    <fullyQualifiedTypeName name="java.awt.FlowLayout"/>
+    <fullyQualifiedTypeName name="java.awt.GridLayout"/>
+    <fullyQualifiedTypeName name="java.awt.Dimension"/>
+    <fullyQualifiedTypeName name="java.awt.Font"/>
+    <fullyQualifiedTypeName name="java.awt.Image"/>
+    <fullyQualifiedTypeName name="javax.print.attribute.standard.Media"/>
+    <fullyQualifiedTypeName name="javax.swing.JFrame"/>
+    <fullyQualifiedTypeName name="java.awt.Toolkit"/>
+    <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
+    <fullyQualifiedTypeName name="javax.swing.JLabel"/>
+    <fullyQualifiedTypeName name="javax.swing.JButton"/>
+    <fullyQualifiedTypeName name="controller.CommandCenter"/>
+    <fullyQualifiedTypeName name="java.awt.Color"/>
 </qualifiedTypeNameHistroy>
