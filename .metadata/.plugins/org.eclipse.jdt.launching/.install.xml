@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <dirs>
+<<<<<<< HEAD
     <entry loc="D:\GUC\Eclipse JavaFX\jdk" stamp="1538322262751"/>
     <entry loc="/Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home" stamp="1513736080000"/>
+||||||| merged common ancestors
+<entry loc="D:\GUC\Eclipse JavaFX\jdk" stamp="1538322262751"/>
+=======
+<entry loc="D:\GUC\Eclipse JavaFX\jdk" stamp="1538322262751"/>
+<entry loc="C:\Program Files\Java\jre1.8.0_171" stamp="1531004501465"/>
+>>>>>>> 7db14f79d48a70d1dd41e8fea6c515cf0cc64ecf
 </dirs>

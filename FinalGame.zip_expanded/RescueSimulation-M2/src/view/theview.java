@@ -87,7 +87,7 @@ public class theview extends JFrame implements ActionListener{
 	    bottom.setBounds(10, 920,((int)Toolkit.getDefaultToolkit().getScreenSize().getWidth())-70, 130);
 	    bottom.setBackground(Color.ORANGE);
 	    this.nextCycle = new JButton();
-	    this.nextCycle.setBounds(10,35, 100, 35);
+	    this.nextCycle.setBounds(300,5, 100, 35);
 	    this.nextCycle.setText("Next Cycle");
 	    this.bottom.add(nextCycle);
 	    label=new JLabel();
@@ -112,6 +112,8 @@ public class theview extends JFrame implements ActionListener{
 	    this.InfoScroll.setLayout(new ScrollPaneLayout());
 	    this.validate();
 		this.repaint();
+		this.Responding.setBackground(Color.WHITE);
+		this.IDLE.setBackground(Color.WHITE);
 		// TODO Auto-generated constructor stub
 	}
     public static void main(String[] args) {

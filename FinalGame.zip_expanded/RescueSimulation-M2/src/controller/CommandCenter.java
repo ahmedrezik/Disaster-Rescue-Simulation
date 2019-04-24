@@ -22,6 +22,11 @@ import model.events.SOSListener;
 import model.infrastructure.ResidentialBuilding;
 import model.people.Citizen;
 import model.people.CitizenState;
+import model.units.Ambulance;
+import model.units.DiseaseControlUnit;
+import model.units.Evacuator;
+import model.units.FireTruck;
+import model.units.GasControlUnit;
 import model.units.Unit;
 import model.units.UnitState;
 import simulation.Address;
@@ -64,7 +69,7 @@ public class CommandCenter implements SOSListener,ActionListener{
 	        	JButton a=new JButton(j+"");
 	        	this.emergencies.add(a);
 	        	a.addActionListener(this);
-	        //	a.setIcon(new ImageIcon("ambulance.png"));
+	        	a.setIcon(new ImageIcon("ambulance.png"));
 	        	this.gameDisplay.getIDLE().setLayout((new GridLayout(((int)Math.ceil(Math.sqrt(this.emergencyUnits.size()))),((int)Math.ceil(Math.sqrt(this.emergencyUnits.size()))))));
 	        	this.gameDisplay.getResponding().setLayout((new GridLayout(((int)Math.ceil(Math.sqrt(this.emergencyUnits.size()))),((int)Math.ceil(Math.sqrt(this.emergencyUnits.size()))))));
 	        	if(this.emergencyUnits.get(j).getState()==UnitState.IDLE)
@@ -79,7 +84,11 @@ public class CommandCenter implements SOSListener,ActionListener{
 	        	int y = Integer.parseInt(this.gameDisplay.getButtons().get(i).getText().charAt(4)+ "");
 	        	
 	        	if(engine.getBuildingByLocation2(new Address(x,y)) != null) {
-                  this.gameDisplay.getButtons().get(i).setIcon(new ImageIcon("building.png"));
+                  this.gameDisplay.getButtons().get(i).setIcon(new ImageIcon("house.png"));
+	        	}
+	        	else if (engine.getCitizenByLocation(new Address (x,y)).size() !=0){
+	        	 this.gameDisplay.getButtons().get(i).setIcon(new ImageIcon("citi.png"));
+	        		
 	        	}
 
 	        	
@@ -149,7 +158,7 @@ public void Addpics() {
 			        	int ycor = Integer.parseInt(this.gameDisplay.getButtons().get(t).getText().charAt(4)+ "");
 			        	if(engine.getBuildingByLocation2(new Address(xcor,ycor))!=null) {
 			        	if(engine.getBuildingByLocation2(new Address(xcor,ycor)).equals(this.visibleBuildings.get(i))) {
-			        		this.gameDisplay.getButtons().get(t).setIcon(new ImageIcon("cityscape.png"));}
+			        		this.gameDisplay.getButtons().get(t).setIcon(new ImageIcon("dis.png"));}
 			        	}
 			        	
 					}
@@ -167,6 +176,29 @@ public void Addpics() {
 					 z+="The Citizen with id "+this.visibleCitizens.get(i).getNationalID()+" Located in ("+this.visibleCitizens.get(i).getLocation().getX()+","+this.visibleCitizens.get(i).getLocation().getY()+") is Dead"+"\n";
 				 }
 			 }
+			 for(int i =0 ; i< this.emergencyUnits.size(); i++) {
+				 if(this.emergencyUnits.get(i).getTarget() != null) {
+				if( this.emergencyUnits.get(i).getLocation().equals(this.emergencyUnits.get(i).getTarget().getLocation())) {
+					for(int l = 0 ; l < this.gameDisplay.getButtons().size(); l++) {
+						if(Integer.parseInt(this.gameDisplay.getButtons().get(l).getText().charAt(1) + "") == this.emergencyUnits.get(i).getLocation().getX() && Integer.parseInt(this.gameDisplay.getButtons().get(l).getText().charAt(4) + "") == this.emergencyUnits.get(i).getLocation().getY()) {
+					
+							
+							if(this.emergencyUnits.get(i) instanceof Ambulance)
+							this.gameDisplay.getButtons().get(l).setIcon(new ImageIcon("ambulance.png"));
+							
+							else if(this.emergencyUnits.get(i) instanceof FireTruck)
+								this.gameDisplay.getButtons().get(l).setIcon(new ImageIcon("firetruck.png"));
+							else if(this.emergencyUnits.get(i) instanceof DiseaseControlUnit)
+								this.gameDisplay.getButtons().get(l).setIcon(new ImageIcon("ambulance.png"));
+							else if(this.emergencyUnits.get(i)instanceof GasControlUnit)
+								this.gameDisplay.getButtons().get(l).setIcon(new ImageIcon("pipes.png"));
+							else	if(this.emergencyUnits.get(i) instanceof Evacuator)
+								this.gameDisplay.getButtons().get(l).setIcon(new ImageIcon("evacuator.png"));
+								
+						
+						}}
+				}
+			 }}
 			 gameDisplay.getSideInfo().setText( gameDisplay.getSideInfo().getText()+"cycle"+cycle+"\n"+y+"\n"+x+"\n"+z);
 	         gameDisplay.getLabel().setText("number of casualities:"+this.engine.calculateCasualties());	
 	        // System.out.println(engine.checkGameOver());
@@ -179,6 +211,7 @@ public void Addpics() {
 		        	JButton a=new JButton(j+"");
 		        	this.emergencies.add(a);
 		        	a.addActionListener(this);
+		        	a.setIcon(new ImageIcon("ambulance.png"));
 		        	this.gameDisplay.getIDLE().setLayout((new GridLayout(((int)Math.ceil(Math.sqrt(this.emergencyUnits.size()))),((int)Math.ceil(Math.sqrt(this.emergencyUnits.size()))))));
 		        	this.gameDisplay.getResponding().setLayout((new GridLayout(((int)Math.ceil(Math.sqrt(this.emergencyUnits.size()))),((int)Math.ceil(Math.sqrt(this.emergencyUnits.size()))))));
 		        	if(this.emergencyUnits.get(j).getState()==UnitState.IDLE)
@@ -295,6 +328,7 @@ public void Addpics() {
 		   
 		    r=this.emergencies.indexOf(e.getSource());
 		    this.gameDisplay.getUnitInfo().add(this.gameDisplay.getRespond());
+		    this.gameDisplay.getRespond().setBounds(160, 170, 100, 35);
 		    
 		}
 		if(e.getSource()==this.gameDisplay.getRespond()) {
